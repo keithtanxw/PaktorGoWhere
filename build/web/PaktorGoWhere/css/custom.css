@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : PaktorGoWhere
+*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400italic,400);
+
+
+body{
+    overflow-x: hidden!important;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    background: #E7E7EE;
+}
+
+.header-content {
+    padding-top: 60px;
+    padding-bottom: 13px;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #f2f2f2;
+}
+
+.header-text {
+    padding-top: 8px;
+}
+
+.main-content {
+    padding-top: 10px;
+}
+
+.profile-header {
+    height: 280px;
+    padding-top: 25px;
+    background-image: url("../img/profilebg/bg-pic-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.profile-text {
+    color: #fff;
+    
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    
+    letter-spacing: 3px;
+    
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.profile-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.line-break {
+    height: 2px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* Header Text */
+.header-1 {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+/* Custom Picture Size */
+.userPic-small {
+    width: 50px;
+    height: auto;
+}
+
+.userPic-medium {
+    width: 150px;
+    height: auto;
+}
+
+/* Directions */
+.direction-div {
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    background-color: #fff;
+}
+
+.direction-div .directions-span {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;    
+}
+
+.direction-div .start {
+    padding-left: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #E7E7EE;
+    border-bottom-width: 2px;    
+}
+
+.direction-div .end {
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-top-style: solid;
+    border-top-color: #E7E7EE;
+    border-top-width: 2px;    
+}
+
+.directions-head-section {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.directions-header {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.directions-landmark {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+}
+
+.directions-landmark-icon {
+    color: #269abc;
+}
