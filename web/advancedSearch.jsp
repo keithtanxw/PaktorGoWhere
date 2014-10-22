@@ -8,7 +8,7 @@
         <!-- Base Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="PaktorGoWhere/css/font-awesome.css" type="text/css">
-        
+
         <!-- Custom Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css" type="text/css">
         <!-- Custom Navbar !-->
@@ -18,19 +18,50 @@
         <!-- Ion Slider -->
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.css"  type="text/css" />
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.skinNice.css"  type="text/css" />
-        
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $(function() {
+                    var availableTags = [
+                        "Current Location",
+                        "Doby Ghaut",
+                        "Ang Mo Kio",
+                        "Bishan",
+                        "Changi",
+                        "Bedok",
+                        "Joo Chiat",
+                        "Jurong",
+                        "Jurong East",
+                        "Orchard",
+                        "City Hall",
+                        "Little India",
+                        "Habour Front",
+                        "Boon Lay"
+                    ];
+                    $("#placeInput").autocomplete({
+                        source: availableTags
+                    });
+                });
+            });
+
+        </script>
     </head>
+
     <body>
         <div class="container-fluid">
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i onclick="window.location.href='goPaktor.jsp'" class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'goPaktor.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
         </div>
         <!-- SideNav Here !-->
-        
+
         <!-- Content !-->
         <section class="container-fluid header-content">
             <div class="col-xs-12 text-center">
@@ -51,37 +82,37 @@
                     </div>
                     <div class="panel-body">
                         <form role="form">
-                        <div class="col-xs-6">
-                            <div class="form-group">
-                                <label for="placeInput">Location</label>
-                                <input type="text" class="form-control" id="placeInput" placeholder="Enter location">
-                            </div>                            
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="form-group">
-                                <label for="sortby">Activity</label>
-                                <select class="form-control" id="sortby">
-                                    <option>Eating</option>
-                                    <option>Some Activity</option>
-                                    <option>Leisure Walks</option>
-                                    <option>Shopping</option>
-                                    <option>Dark Corners</option>
-                                </select>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="placeInput">Location</label>
+                                    <input type="text" class="form-control" id="placeInput" placeholder="Enter location">
+                                </div>                            
                             </div>
-                            <div class="form-group">
-                                <label for="range_5">Select sort range</label>
-                                <input id="range_5" type="text" name="range_5" value="" />
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="sortby">Activity</label>
+                                    <select class="form-control" id="sortby">
+                                        <option>Eating</option>
+                                        <option>Some Activity</option>
+                                        <option>Leisure Walks</option>
+                                        <option>Shopping</option>
+                                        <option>Dark Corners</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="range_5">Select sort range</label>
+                                    <input id="range_5" type="text" name="range_5" value="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="form-group">
-                            <label for="sortby">Sort By</label>
-                            <select class="form-control" id="sortby">
-                                <option selected>Distance</option>
-                                <option>Price</option>
-                                <option>Ambience</option>
-                            </select>
-                        </div>    
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="sortby">Sort By</label>
+                                    <select class="form-control" id="sortby">
+                                        <option selected>Distance</option>
+                                        <option>Price</option>
+                                        <option>Ambience</option>
+                                    </select>
+                                </div>    
                         </form>    
                     </div>
                 </div>                            
@@ -113,26 +144,29 @@
                             <strong>250m</strong>&nbsp;away
                         </td>
                     </tr>
-                    
-                    
+
+
                 </table>
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- Ion Slider -->
         <script src="PaktorGoWhere/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
         <script>
-             //Range slider for distance
-            $("#range_5").ionRangeSlider({
-                min: 1,
-                max: 40,
-                type: 'single',
-                step: 0.1,
-                postfix: " km",
-                prettify: false,
-                hasGrid: false
-            });
+                    //Range slider for distance
+                    $("#range_5").ionRangeSlider({
+                        min: 1,
+                        max: 40,
+                        type: 'single',
+                        step: 0.1,
+                        postfix: " km",
+                        prettify: false,
+                        hasGrid: false
+                    });
         </script>
     </body>
 </html>

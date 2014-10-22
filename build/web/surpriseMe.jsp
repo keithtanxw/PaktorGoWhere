@@ -82,6 +82,8 @@
                 <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
+            
+            
         </div>
         <!-- SideNav Here !-->
 
@@ -111,8 +113,7 @@
 
 
 
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-
     </body>
 </html>
