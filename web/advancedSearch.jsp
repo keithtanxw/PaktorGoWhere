@@ -1,9 +1,3 @@
-<%-- 
-    Document   : advancedSearch
-    Created on : Oct 18, 2014, 10:28:11 PM
-    Author     : user
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -30,7 +24,7 @@
         <div class="container-fluid">
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-3 menu-left"><i onclick="window.location.href='goPaktor.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
