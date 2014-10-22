@@ -62,7 +62,7 @@
         </section>
         <div class="container-fluid main-content">
             <div class="row text-center" style="height:200px">
-                MAP HERE
+                <img src="PaktorGoWhere/img/places/place1.jpg" style="height:150%; width:100%;" />
             </div>
             <div class="row text-center">
                 <div class="btn-group">
