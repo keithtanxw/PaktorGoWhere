@@ -191,8 +191,9 @@
                         </table>
                         
                         <!--Scroll to the top-->
-                        <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-right" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
+                        <div class="col-xs-offset-10 col-xs-2">
+                        <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
