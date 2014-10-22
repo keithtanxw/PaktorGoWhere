@@ -30,7 +30,7 @@
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Advance Search</a></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">La Strada</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
