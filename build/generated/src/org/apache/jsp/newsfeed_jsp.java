@@ -111,7 +111,7 @@ public final class newsfeed_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"panel-body\">\r\n");
       out.write("                            <p>Just had the most wonderful experience at Ku-de-TA</p> \r\n");
       out.write("                            <a class=\"panel-google-plus-image\" href=\"https://plus.google.com/photos/115077481218689845626/albums/6028961040749409985/6028961040650432498\">\r\n");
-      out.write("                                <img src=\"PaktorGoWhere/img/places/place1.jpg\" />\r\n");
+      out.write("                                <img src=\"PaktorGoWhere/img/places/place1.jpg\"/>\r\n");
       out.write("                            </a>\r\n");
       out.write("                        </div>\r\n");
       out.write("                        <div class=\"panel-footer\">\r\n");

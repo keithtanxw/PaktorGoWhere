@@ -14,26 +14,121 @@
         <!-- Base Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/bootstrap.css">
         <link rel="stylesheet" href="PaktorGoWhere/css/font-awesome.css">
-        
+
         <!-- Custom Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css">
         <!-- Custom Navbar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
         <!-- Google Styled Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
-        
+
+        <style>
+            html, body, container-fluid, row, col-xs-12, #map-canvas {
+                height: 300px;
+                margin: 0px;
+                padding: 0px
+            }
+            td:hover { 
+                background-color: aliceblue;
+            }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script>
+            // Note: This example requires that you consent to location sharing when
+            // prompted by your browser. If you see a blank space instead of the map, this
+            // is probably because you have denied permission for location sharing.
+
+            var map;
+            var marker;
+
+            function initialize() {
+
+
+                //Set map zoom to factor of 15
+                var mapOptions = {
+                    zoom: 15,
+                };
+
+                //Instantiate map object
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                // This whole chunk is to get the current location of the device
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        var pos = new google.maps.LatLng(position.coords.latitude,
+                                position.coords.longitude);
+
+                        var infowindow = new google.maps.InfoWindow({
+                            map: map,
+                            position: pos,
+                        });
+
+                        marker = new google.maps.Marker({
+                            position: pos,
+                            map: map,
+                            animation: google.maps.Animation.DROP,
+                            title: 'Hello World!'
+                        });
+                        //Listener for the bounce function
+                        google.maps.event.addListener(marker, 'click', toggleBounce);
+
+                        map.setCenter(pos);
+                    }, function() {
+                        handleNoGeolocation(true);
+                    });
+                } else {
+                    // Browser doesn't support Geolocation
+                    handleNoGeolocation(false);
+                }
+
+
+            }
+
+            //Handle the event where the geolocation is not enabled
+            function handleNoGeolocation(errorFlag) {
+                if (errorFlag) {
+                    var content = 'Error: The Geolocation service failed.';
+                } else {
+                    var content = 'Error: Your browser doesn\'t support geolocation.';
+                }
+
+                var options = {
+                    map: map,
+                    position: new google.maps.LatLng(60, 105),
+                    content: content
+                };
+
+                var infowindow = new google.maps.InfoWindow(options);
+                map.setCenter(options.position);
+            }
+
+            //this bounce method is just for laughs
+            function toggleBounce() {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+
+            //Initiate the entire map event
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
+    
     <body>
         <div class="container-fluid">
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-3 menu-left"><i onclick="window.location.href='details.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
         </div>
         <!-- SideNav Here !-->
-        
+
         <!-- Content !-->
         <section class="container-fluid header-content">
             <div class="col-xs-12 text-center header-text">
@@ -42,18 +137,17 @@
             </div>
         </section>
         <div class="container-fluid main-content">
-            <div class="row text-center" style="height:300px">
-                MAP HERE
+            <div class="row text-center" style="height:200px">
+                <div id="map-canvas"></div>
             </div>
             <div class="row">
-                <div class="col-xs-6"></div>               
-                <div class="col-xs-6">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-primary" ><i class="fa fa-car"></i></button>
-                        <button type="button" class="btn btn-lg btn-default"><i class="fa fa-bus"></i></button>
-                        <button type="button" class="btn btn-lg btn-default">Walk</button>
+                <div class="col-xs-12 text-center">      
+                    <div class="btn-group text-center">
+                        <button type="button" class="btn btn-lg btn-primary center-block" ><i class="fa fa-car"></i></button>
+                        <button type="button" class="btn btn-lg btn-default center-block"><i class="fa fa-bus"></i></button>
+                        <button type="button" class="btn btn-lg btn-default center-block">Walk</button>
                     </div>
-                </div> 
+                </div>   
             </div><br />
             <div class="row">
                 <div class="col-xs-12 direction-div">
@@ -97,7 +191,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 directions-span">
-                         <div class="col-xs-1">
+                        <div class="col-xs-1">
                             <i class="fa fa-angle-double-down"></i>
                         </div>
                         <div class="col-xs-8">
@@ -119,6 +213,6 @@
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-        
+
     </body>
 </html>

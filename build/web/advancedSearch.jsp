@@ -15,7 +15,9 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css" type="text/css">
         <!-- Google Styled Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">
-
+        <!-- Sidebar !-->
+        <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
+        
         <!-- Ion Slider -->
         <link href="PaktorGoWhere/css/ionslider/ionicons.min.css" rel="stylesheet" type="text/css" />
         <link href="PaktorGoWhere/css/ionslider/slider.css" rel="stylesheet" type="text/css" />
@@ -58,12 +60,29 @@
         <div class="container-fluid">
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'goPaktor.jsp'" class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
-                <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
+                <div class="col-xs-3 menu-left"></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Advance Search</a></div>
+                <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
         <!-- SideNav Here !-->
+        <nav id="sidebar-wrapper">
+            <div class="sidebar-body">
+                <div class="user-panel text-center">
+                    <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" />&nbsp;&nbsp;
+                    <span class="user-panel-text">Jundat90</span>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
+                        <li><a href="findPeople.jsp"><i class="fa fa-users"></i>&nbsp;&nbsp;Followers</a></li>
+                        <li><a href=#><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
+                        <li><a href=#><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
+                        <li><a href=#><i class="fa fa-gear"></i>&nbsp;&nbsp;Newsfeed Settings</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </nav>
 
         <!-- Content !-->
         <section class="container-fluid header-content">
@@ -119,36 +138,36 @@
                 </div>
                 <!-- CONTENTS HERE !-->
                 <div class="container-fluid">
-                <div class="row">
-                    <table class="table table-responsive" style="background-color: white">
-                        <tr>
-                            <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                            <td>
-                                <strong>La Strada</strong><br/>
-                                Place Tags<br />
-                                Tags
-                            </td>
-                            <td class="text-right">
-                                <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                <strong>200m</strong>&nbsp;away
-                            </td>
-                        </tr>
-                         <tr>
-                            <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                            <td>
-                                <strong>La Strada</strong><br/>
-                                Place Tags<br />
-                                Tags
-                            </td>
-                            <td class="text-right">
-                                <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                <strong>200m</strong>&nbsp;away
-                            </td>
-                        </tr>
+                    <div class="row">
+                        <table class="table table-responsive" style="background-color: white">
+                            <tr>
+                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
+                                <td>
+                                    <strong>La Strada</strong><br/>
+                                    Place Tags<br />
+                                    Tags
+                                </td>
+                                <td class="text-right">
+                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                    <strong>200m</strong>&nbsp;away
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
+                                <td>
+                                    <strong>La Strada</strong><br/>
+                                    Place Tags<br />
+                                    Tags
+                                </td>
+                                <td class="text-right">
+                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                    <strong>200m</strong>&nbsp;away
+                                </td>
+                            </tr>
 
 
-                    </table>
-                </div>
+                        </table>
+                    </div>
                 </div>
             </div>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
@@ -160,36 +179,38 @@
             <script src="PaktorGoWhere/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
             <!-- Bootstrap slider -->
             <script src="PaktorGoWhere/js/plugins/ionslider/bootstrap-slider.js" type="text/javascript"></script>
+            
+            <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
             <script>
 
-                    $(document).ready(function() {
-                        //Range slider for distance
-                        $("#range_5").ionRangeSlider({
-                            min: 1,
-                            max: 40,
-                            type: 'single',
-                            step: 0.1,
-                            postfix: " km",
-                            prettify: false,
-                            hasGrid: false
-                        });
+            $(document).ready(function() {
+                //Range slider for distance
+                $("#range_5").ionRangeSlider({
+                    min: 1,
+                    max: 40,
+                    type: 'single',
+                    step: 0.1,
+                    postfix: " km",
+                    prettify: false,
+                    hasGrid: false
+                });
 
-                        var status = 1;
-                        $("#filterToggle").click(function() {
-                            $("#selectFilters").slideToggle("slow");
+                var status = 1;
+                $("#filterToggle").click(function() {
+                    $("#selectFilters").slideToggle("slow");
 
-                            //change the arrow direction
-                            if (status === 1) {
-                                document.getElementById("directionIcon").className = "fa fa-angle-double-down";
-                                status = 2;
-                            } else if (status === 2) {
-                                document.getElementById("directionIcon").className = "fa fa-angle-double-up";
-                                status = 1;
-                            }
-                        });
+                    //change the arrow direction
+                    if (status === 1) {
+                        document.getElementById("directionIcon").className = "fa fa-angle-double-down";
+                        status = 2;
+                    } else if (status === 2) {
+                        document.getElementById("directionIcon").className = "fa fa-angle-double-up";
+                        status = 1;
+                    }
+                });
 
 
-                    });
+            });
             </script>
     </body>
 </html>
