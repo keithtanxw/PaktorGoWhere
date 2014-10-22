@@ -16,6 +16,8 @@
         <!-- Google Styled Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">
         <!-- Ion Slider -->
+
+        <link href="PaktorGoWhere/css/ionslider/ionicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.css"  type="text/css" />
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.skinNice.css"  type="text/css" />
 

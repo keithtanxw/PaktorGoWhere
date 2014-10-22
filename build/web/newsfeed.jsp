@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PaktorGoWhere yoo</title>
+        <title>PaktorGoWhere</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Base Style Sheets !-->
@@ -30,7 +30,7 @@
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">PAKTORGoWHERE</a></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Newsfeed</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -38,7 +38,7 @@
         <nav id="sidebar-wrapper">
             <div class="sidebar-body">
                 <div class="user-panel text-center">
-                    <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" /><br />
+                    <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" />&nbsp;&nbsp;
                     <span class="user-panel-text">Jundat90</span>
                 </div>
                 <div class="sidebar-menu">
@@ -54,30 +54,10 @@
         </nav>
         
         <!-- Content !-->
-        <section class="container-fluid header-content">
-            <div class="col-xs-6 header-text">
-                <span class="header-1">Newsfeed</span>
-            </div>
-            <div class="col-xs-6 text-right">
-                <button class="btn btn-danger">Go Paktor</button>
-            </div>
-        </section>
         <div class="container-fluid main-content">
             <div class="row">
                 <div class="col-xs-12 col-md-offset-2 col-md-8">
                     <div class="[ panel panel-default ] panel-google-plus">
-                        <div class="dropdown">
-                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                <span class="[ glyphicon glyphicon-chevron-down ]"></span>
-                            </span>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                            </ul>
-                        </div>
                         <div class="panel-google-plus-tags">
                             <ul>
                                 <li>#Cafe</li>

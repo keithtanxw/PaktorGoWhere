@@ -10,7 +10,6 @@ $(function() {
     $("#menu-toggle").click(function(e) {
         e.stopPropagation();
         $("#sidebar-wrapper").toggleClass("active");
-        $("#menu-toggle").hide();
         status = true;
     });
 
@@ -18,14 +17,12 @@ $(function() {
         click: function() {
             if (status) {
                 $("#sidebar-wrapper").toggleClass("active");
-                $("#menu-toggle").show();
                 status = false;
             }
         },
         keypress: function() {
             if (status) {
                 $("#sidebar-wrapper").toggleClass("active");
-                $("#menu-toggle").show();
                 status = false;
             }
         }

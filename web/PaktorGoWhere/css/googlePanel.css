@@ -15,7 +15,7 @@ td:hover {
     position: relative;
     border-radius: 0px;
     border: 1px solid rgb(216, 216, 216);
-    font-size: 12px;
+    font-size: 16px;
 }
 .panel-google-plus > .dropdown {
     position: absolute;
@@ -89,12 +89,12 @@ td:hover {
 }
 .panel-google-plus > .panel-heading > h3 {
     margin: 0px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
 }
 .panel-google-plus > .panel-heading > h5 {
     color: rgb(153, 153, 153);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 .panel-google-plus > .panel-body {
