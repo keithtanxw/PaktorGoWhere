@@ -15,9 +15,10 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css" type="text/css">
         <!-- Google Styled Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">
-        <!-- Ion Slider -->
 
+        <!-- Ion Slider -->
         <link href="PaktorGoWhere/css/ionslider/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="PaktorGoWhere/css/ionslider/slider.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.css"  type="text/css" />
         <link rel="stylesheet" href="PaktorGoWhere/css/ionslider/ion.rangeSlider.skinNice.css"  type="text/css" />
 
@@ -88,7 +89,15 @@
                                 <div class="form-group">
                                     <label for="placeInput">Location</label>
                                     <input type="text" class="form-control" id="placeInput" placeholder="Enter location">
-                                </div>                            
+                                </div>     
+                                <div class="form-group">
+                                    <label for="sortby">Sort By</label>
+                                    <select class="form-control" id="sortby">
+                                        <option selected>Distance</option>
+                                        <option>Price</option>
+                                        <option>Ambience</option>
+                                    </select>
+                                </div>    
                             </div>
                             <div class="col-xs-6">
                                 <div class="form-group">
@@ -106,59 +115,50 @@
                                     <input id="range_5" type="text" name="range_5" value="" />
                                 </div>
                             </div>
-                            <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="sortby">Sort By</label>
-                                    <select class="form-control" id="sortby">
-                                        <option selected>Distance</option>
-                                        <option>Price</option>
-                                        <option>Ambience</option>
-                                    </select>
-                                </div>    
-                        </form>    
-                    </div>
-                </div>                            
+                    </div>                            
+                </div>
+                <!-- CONTENTS HERE !-->
+                <div class="row">
+                    <table class="table table-hover">
+                        <tr>
+                            <td>Picture</td>
+                            <td>
+                                <strong>Place Title</strong><br />
+                                Place Tags<br />
+                                Tags
+                            </td>
+                            <td class="text-right">
+                                <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                <strong>200m</strong>&nbsp;away
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Picture</td>
+                            <td>
+                                <strong>Place Title</strong><br />
+                                Place Tags<br />
+                                Tags
+                            </td>
+                            <td class="text-right">
+                                <h4>4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                <strong>250m</strong>&nbsp;away
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
             </div>
-            <!-- CONTENTS HERE !-->
-            <div class="row">
-                <table class="table table-hover">
-                    <tr>
-                        <td>Picture</td>
-                        <td>
-                            <strong>Place Title</strong><br />
-                            Place Tags<br />
-                            Tags
-                        </td>
-                        <td class="text-right">
-                            <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                            <strong>200m</strong>&nbsp;away
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Picture</td>
-                        <td>
-                            <strong>Place Title</strong><br />
-                            Place Tags<br />
-                            Tags
-                        </td>
-                        <td class="text-right">
-                            <h4>4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                            <strong>250m</strong>&nbsp;away
-                        </td>
-                    </tr>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 
-
-                </table>
-            </div>
-        </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-
-        <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- Ion Slider -->
-        <script src="PaktorGoWhere/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
-        <script>
+            <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
+            <!-- Ion Slider -->
+            <script src="PaktorGoWhere/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
+            <!-- Bootstrap slider -->
+            <script src="PaktorGoWhere/js/plugins/ionslider/bootstrap-slider.js" type="text/javascript"></script>
+            <script>
                     //Range slider for distance
                     $("#range_5").ionRangeSlider({
                         min: 1,
@@ -169,6 +169,6 @@
                         prettify: false,
                         hasGrid: false
                     });
-        </script>
+            </script>
     </body>
 </html>
