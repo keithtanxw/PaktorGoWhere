@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
-        
+
         <!-- Ion Slider -->
         <link href="PaktorGoWhere/css/ionslider/ionicons.min.css" rel="stylesheet" type="text/css" />
         <link href="PaktorGoWhere/css/ionslider/slider.css" rel="stylesheet" type="text/css" />
@@ -164,9 +164,35 @@
                                     <strong>200m</strong>&nbsp;away
                                 </td>
                             </tr>
-
-
+                            <tr>
+                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
+                                <td>
+                                    <strong>La Strada</strong><br/>
+                                    Place Tags<br />
+                                    Tags
+                                </td>
+                                <td class="text-right">
+                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                    <strong>200m</strong>&nbsp;away
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
+                                <td>
+                                    <strong>La Strada</strong><br/>
+                                    Place Tags<br />
+                                    Tags
+                                </td>
+                                <td class="text-right">
+                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                    <strong>200m</strong>&nbsp;away
+                                </td>
+                            </tr>
                         </table>
+                        
+                        <!--Scroll to the top-->
+                        <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-right" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
                     </div>
                 </div>
             </div>
@@ -179,7 +205,7 @@
             <script src="PaktorGoWhere/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
             <!-- Bootstrap slider -->
             <script src="PaktorGoWhere/js/plugins/ionslider/bootstrap-slider.js" type="text/javascript"></script>
-            
+
             <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
             <script>
 
@@ -209,7 +235,23 @@
                     }
                 });
 
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function() {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
 
+                $('#back-to-top').tooltip('show');
             });
             </script>
     </body>
