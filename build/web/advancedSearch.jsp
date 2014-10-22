@@ -74,16 +74,16 @@
         </section>
         <div class="container-fluid main-content">
             <div class="row">
-                <div class="panel">
+                <div class="panel" style="min-height: 50px">
                     <div class="panel-heading">
                         <div class="col-xs-6 text-left">
                             <i class="fa fa-filter"></i>&nbsp;&nbsp;Filters
                         </div>
                         <div class="col-xs-6 text-right">
-                            <button class="btn bg-teal btn-sm"><i class="fa fa-angle-double-up"></i></button>
+                            <button id="filterToggle" class="btn btn-primary" data-widget="collapse"><i id="directionIcon" class="fa fa-angle-double-up"></i></button>
                         </div>  
                     </div>
-                    <div class="panel-body">
+                    <div id="selectFilters" class="panel-body" >
                         <form role="form">
                             <div class="col-xs-6">
                                 <div class="form-group">
@@ -118,12 +118,13 @@
                     </div>                            
                 </div>
                 <!-- CONTENTS HERE !-->
+                <div class="container-fluid">
                 <div class="row">
-                    <table class="table table-hover">
+                    <table class="table table-responsive" style="background-color: white">
                         <tr>
-                            <td>Picture</td>
+                            <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
                             <td>
-                                <strong>Place Title</strong><br />
+                                <strong>La Strada</strong><br/>
                                 Place Tags<br />
                                 Tags
                             </td>
@@ -132,21 +133,22 @@
                                 <strong>200m</strong>&nbsp;away
                             </td>
                         </tr>
-                        <tr>
-                            <td>Picture</td>
+                         <tr>
+                            <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
                             <td>
-                                <strong>Place Title</strong><br />
+                                <strong>La Strada</strong><br/>
                                 Place Tags<br />
                                 Tags
                             </td>
                             <td class="text-right">
-                                <h4>4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                <strong>250m</strong>&nbsp;away
+                                <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
+                                <strong>200m</strong>&nbsp;away
                             </td>
                         </tr>
 
 
                     </table>
+                </div>
                 </div>
             </div>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
@@ -159,15 +161,34 @@
             <!-- Bootstrap slider -->
             <script src="PaktorGoWhere/js/plugins/ionslider/bootstrap-slider.js" type="text/javascript"></script>
             <script>
-                    //Range slider for distance
-                    $("#range_5").ionRangeSlider({
-                        min: 1,
-                        max: 40,
-                        type: 'single',
-                        step: 0.1,
-                        postfix: " km",
-                        prettify: false,
-                        hasGrid: false
+
+                    $(document).ready(function() {
+                        //Range slider for distance
+                        $("#range_5").ionRangeSlider({
+                            min: 1,
+                            max: 40,
+                            type: 'single',
+                            step: 0.1,
+                            postfix: " km",
+                            prettify: false,
+                            hasGrid: false
+                        });
+
+                        var status = 1;
+                        $("#filterToggle").click(function() {
+                            $("#selectFilters").slideToggle("slow");
+
+                            //change the arrow direction
+                            if (status === 1) {
+                                document.getElementById("directionIcon").className = "fa fa-angle-double-down";
+                                status = 2;
+                            } else if (status === 2) {
+                                document.getElementById("directionIcon").className = "fa fa-angle-double-up";
+                                status = 1;
+                            }
+                        });
+
+
                     });
             </script>
     </body>

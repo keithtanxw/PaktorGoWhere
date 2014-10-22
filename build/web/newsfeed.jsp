@@ -72,7 +72,7 @@
                         <div class="panel-body">
                             <p>Just had the most wonderful experience at Ku-de-TA</p> 
                             <a class="panel-google-plus-image" href="https://plus.google.com/photos/115077481218689845626/albums/6028961040749409985/6028961040650432498">
-                                <img src="PaktorGoWhere/img/places/place1.jpg" />
+                                <img src="PaktorGoWhere/img/places/place1.jpg"/>
                             </a>
                         </div>
                         <div class="panel-footer">
