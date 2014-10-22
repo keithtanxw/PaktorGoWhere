@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 21, 2014, 7:21:12 PM
+    Author     : user
+*/
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 2000;
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    margin-right: -300px;
+    overflow-y: hidden;
+    background-color: #b0120a;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper.active {
+    right: 300px;
+    width: 300px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-body {
+    color: #fff;
+}
+
+.sidebar-body .user-panel {
+    height: 170px;
+    padding: 25px 20px;
+    background-color: #000;
+    background-image: url("../img/profilebg/bg-pic-2.jpg");
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.sidebar-body .sidebar-menu {
+    
+}
+
+.sidebar-body .sidebar-menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.sidebar-body .sidebar-menu li {
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;    
+    padding: 10px 20px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #A9120A;    
+}
+
+.sidebar-body .sidebar-menu li:hover {
+    background-color: #d01716;
+}
+
+.sidebar-body .sidebar-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.panel-pic {
+    height: 70px;
+    width: auto;
+}
+
+.user-panel-text {    
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
