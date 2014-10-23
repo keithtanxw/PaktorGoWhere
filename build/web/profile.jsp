@@ -35,24 +35,28 @@
                     <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
                 </nav>
             </div>
-            <!-- SideNav Here !-->
+            <!----------------------------------------------------------------------------------- 
+                Sidenav Section 
+            !------------------------------------------------------------------------------------>
             <nav id="sidebar-wrapper">
                 <div class="sidebar-body">
                     <div class="user-panel text-center">
-                        <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" /><br />
+                        <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" />&nbsp;&nbsp;
                         <span class="user-panel-text">Jundat90</span>
                     </div>
                     <div class="sidebar-menu">
                         <ul>
+                            <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
                             <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                            <li><a href="findPeople.jsp"><i class="fa fa-users"></i>&nbsp;&nbsp;Followers</a></li>
-                            <li><a href=#><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
-                            <li><a href=#><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
-                            <li><a href=#><i class="fa fa-gear"></i>&nbsp;&nbsp;Newsfeed Settings</a></li>
+                            <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>
+                            <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
+                            <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
+                            <li><a href="#"><i class="fa fa-gear"></i>&nbsp;&nbsp;Settings</a></li>
+                            <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                         </ul>
                     </div>                
                 </div>
-            </nav>
+            </nav> 
             
             <!-- Content !-->
             
