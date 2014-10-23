@@ -23,41 +23,60 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
 
         <style>
-            html, body, container-fluid, row, col-xs-12, #map-canvas {
+
+            html, body, #map-canvas {
                 height: 300px;
                 margin: 0px;
                 padding: 0px
             }
-            td:hover { 
-                background-color: aliceblue;
+            #panel {
+                position: absolute;
+                top: 150px;
+                left: 50%;
+                margin-left: -50%;
+                z-index: 5;
+                background-color: #fff;
+                padding: 5px;
+                border: 1px solid #999;
             }
         </style>
 
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
+        <style>
+            #directions-panel {
+                height: 100%;
+                width: 390px;
+                overflow: auto;
+            }
+
+            @media print {
+                #map-canvas {
+                    height: 500px;
+                    margin: 0;
+                }
+
+                #directions-panel {
+                    float: none;
+                    width: auto;
+                }
+            }
+        </style>
+
+        <script src = "https://maps.googleapis.com/maps/api/js?v=3.exp" ></script>
         <script>
-            // Note: This example requires that you consent to location sharing when
-            // prompted by your browser. If you see a blank space instead of the map, this
-            // is probably because you have denied permission for location sharing.
-
+            var directionsDisplay;
+            var directionsService = new google.maps.DirectionsService();
             var map;
-            var marker;
+            var pos;
+            var desPos = new google.maps.LatLng(1.285377, 103.858409);
 
             function initialize() {
-
-
-                //Set map zoom to factor of 15
-                var mapOptions = {
-                    zoom: 15,
-                };
-
-                //Instantiate map object
-                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                directionsDisplay = new google.maps.DirectionsRenderer();
 
                 // This whole chunk is to get the current location of the device
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {
-                        var pos = new google.maps.LatLng(position.coords.latitude,
+                        pos = new google.maps.LatLng(position.coords.latitude,
                                 position.coords.longitude);
 
                         var infowindow = new google.maps.InfoWindow({
@@ -83,10 +102,36 @@
                     handleNoGeolocation(false);
                 }
 
+                var mapOptions = {
+                    zoom: 15,
+                    center: pos
+                }
 
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                directionsDisplay.setMap(map);
+                directionsDisplay.setPanel(document.getElementById('directions-panel'));
             }
 
-            //Handle the event where the geolocation is not enabled
+
+
+            function calcRoute(theId) {
+                var selectedMode = document.getElementById(theId).value;
+                var request = {
+                    origin: pos,
+                    destination: desPos,
+                    // Note that Javascript allows us to access the constant
+                    // using square brackets and a string value as its
+                    // "property."
+                    travelMode: google.maps.TravelMode[selectedMode]
+                };
+                directionsService.route(request, function(response, status) {
+                    if (status === google.maps.DirectionsStatus.OK) {
+                        directionsDisplay.setDirections(response);
+                    }
+                });
+            }
+
+            //Handle geolocation error
             function handleNoGeolocation(errorFlag) {
                 if (errorFlag) {
                     var content = 'Error: The Geolocation service failed.';
@@ -113,16 +158,18 @@
                 }
             }
 
-            //Initiate the entire map event
+
+
             google.maps.event.addDomListener(window, 'load', initialize);
+
         </script>
     </head>
-    
-    <body>
+
+    <body onload="calcRoute()">
         <div class="container-fluid">
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i onclick="window.location.href='details.jsp'" class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'details.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
@@ -139,20 +186,28 @@
         <div class="container-fluid main-content">
             <div class="row text-center" style="height:200px">
                 <div id="map-canvas"></div>
+                
             </div>
+
+            <br><br><br>
             <div class="row">
                 <div class="col-xs-12 text-center">      
                     <div class="btn-group text-center">
-                        <button type="button" class="btn btn-lg btn-primary center-block" ><i class="fa fa-car"></i></button>
-                        <button type="button" class="btn btn-lg btn-default center-block"><i class="fa fa-bus"></i></button>
-                        <button type="button" class="btn btn-lg btn-default center-block">Walk</button>
+                        <button id="mode1" onclick="calcRoute(this.id);" type="button" value="DRIVING" class="btn btn-lg btn-primary center-block" ><i class="fa fa-car"></i></button>
+                        <button id="mode2" onclick="calcRoute(this.id);" type="button" value="TRANSIT" class="btn btn-lg btn-default center-block"><i class="fa fa-bus"></i></button>
+                        <button id="mode3" onclick="calcRoute(this.id);" type="button" value="WALKING" class="btn btn-lg btn-default center-block">Walk</button>
                     </div>
                 </div>   
-            </div><br />
+            </div><br/>
+
+
+
+
             <div class="row">
                 <div class="col-xs-12 direction-div">
                     <div class="directions-head-section">
                         <p class="directions-header">Drive 0.82km, 6 min</p>
+                        <div id="directions-panel"></div>
                     </div>                    
                     <div class="col-xs-12 start">
                         <h4><i class="fa fa-circle-o"></i>&nbsp;&nbsp;Current Location</h4>
