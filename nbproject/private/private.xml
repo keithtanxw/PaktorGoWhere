@@ -5,8 +5,11 @@
         <group>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/profile.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/newsfeed.jsp</file>
+            <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/bookmarks.jsp</file>
+            <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/goPaktor.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/surpriseMe.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/advancedSearch.jsp</file>
+            <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/details.jsp</file>
         </group>
     </open-files>
 </project-private>
