@@ -78,49 +78,132 @@
                     <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;<b>Phone Number Here: </b><small>(65) 6269 3411</small></li>
                     <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;<b>Website Here: </b><small> http://www.zoo.com.sg</small></li>
                     <li class="list-group-item">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu dictum est. Donec lobortis quam nec purus mattis, in semper ex tempor. Sed mi elit, convallis vitae augue a, finibus consectetur elit.
+                        <i class="fa fa-book"></i>&nbsp;&nbsp;<b>Description: </b><small> The Singapore Zoo, formerly known as the Singapore Zoological Gardens and commonly known locally as the Mandai Zoo, occupies 28 hectares on the margins of Upper Seletar Reservoir within Singapore's heavily forested central catchment area.  </small></li>
                     </li>
                 </ul>                
             </div><!-- close top row !-->
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <p><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;Ratings</p>
-                        <div class="col-xs-3" style="padding-left: 0px">
-                            Price
+                        <p><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;<b>Ratings</b></p>
+                        <div class="col-xs-4" style="padding-left: 0px">
+                            <b>Price</b>
                         </div>
-                        <div class="col-xs-5">
+                        <div class="col-xs-8">
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart-o"></i>
                         </div>
-                        <div class="col-xs-4"></div>
-                        <div class="col-xs-3" style="padding-left: 0px">
-                            Price
+                        <div class="col-xs-4" style="padding-left: 0px">
+                            <b>Ambience</b>
                         </div>
-                        <div class="col-xs-5">
+                        <div class="col-xs-8">
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart-o"></i>
                         </div>
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4" style="padding-left: 0px">
+                            <b>Service</b>
+                        </div>
+                        <div class="col-xs-8">
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart-o"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr />
-            <div class="row">
+
+            <div class="row" style="background-color: white">
                 <div class="col-xs-12 text-center">
-                    COMMENTS HERE
+                    <div class="row">
+                        <div class="menu-tab turqoise-tab">
+                            <div class="col-xs-12 text-center">
+                                <span class="menu-tab-text"><i class="fa fa-group"></i>&nbsp;&nbsp;All Comments</span>
+                            </div>
+                        </div>
+                        <div class="menu-tab turqoise-tab">
+                            <div class="col-xs-12 text-center">
+                                <span class="menu-tab-text"><i class="fa fa-heart"></i>&nbsp;&nbsp;Following</span>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <table class="table table-hover" id="list-table">
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">IU</span><br />
+                                        <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            <tr>
+                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
+                                                <td>
+                                                    <span class="list-text-heavy">Andy Lau</span><br />
+                                                    <span class="list-text-subtext">Cantonese <a href="#">See more..</a></span>
+                                                </td>
+                                                <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
+                                                <td>
+                                                    <span class="list-text-heavy">Beckham</span><br />
+                                                    <span class="list-text-subtext">Football in the zoo rocks <a href="#">See more..</a></span>
+                                                </td>
+                                                <td class="td-friend text-center"><span class="list-text-heavy">3.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
+                                                <td>
+                                                    <span class="list-text-heavy">Jun Dat</span><br />
+                                                    <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
+                                                </td>
+                                                <td class="td-friend text-center"><span class="list-text-heavy">4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
+                                                <td>
+                                                    <span class="list-text-heavy">Taeyeon</span><br />
+                                                    <span class="list-text-subtext">kimchi rock <a href="#">See more..</a></span>
+                                                </td>
+                                                <td class="td-friend text-center"><span class="list-text-heavy">4.7/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
+                                                <td>
+                                                    <span class="list-text-heavy">Ah Beng</span><br />
+                                                    <span class="list-text-subtext">Woohoo <a href="#">See more..</a></span>
+                                                </td>
+                                                <td class="td-friend text-center"><span class="list-text-heavy">4.1/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+
+                                            </tr>
+                                            
+                            </table>
+                            <div class="col-xs-offset-1 col-xs-10">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
-    </body>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
+</body>
 </html>
