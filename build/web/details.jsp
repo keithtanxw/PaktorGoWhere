@@ -30,7 +30,7 @@
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">La Strada</a></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">DETAILS</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -62,20 +62,21 @@
         </section>
         <div class="container-fluid main-content">
             <div class="row text-center" style="height:200px">
-                <img src="PaktorGoWhere/img/places/place1.jpg" style="height:150%; width:100%;" />
+                <img src="PaktorGoWhere/img/places/place3.jpg" style="height:150%; width:100%;" />
             </div>
             <div class="row text-center">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-lg btn-default"><i class="fa fa-share"></i>&nbsp;&nbsp;Directions</button>
-                    <button type="button" class="btn btn-lg btn-success"><i class="fa fa-plus"></i>&nbsp;&nbsp;Save Place</button>
+                    <button type="button" class="btn btn-lg btn-default" onclick="window.location.href = 'directions.jsp'"><i class="fa fa-share"></i>&nbsp;&nbsp;Directions</button>
+                    <button type="button" class="btn btn-lg btn-success" onclick="window.location.href = 'bookmarks.jsp'"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmark</button>
                 </div>
             </div><br/><br />
             <div class="row">
                 <ul class="list-group">
-                    <li class="list-group-item text-center"><p class="header-1">Place Name</p></li>
-                    <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Address Here</li>
-                    <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;Phone Number Here</li>
-                    <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;Website Here</li>
+                    <li class="list-group-item text-center"><p class="header-1">Singapore Zoological Garden</p></li>
+                    <li class="list-group-item"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<b>Opening Hours: </b><small>&nbsp;&nbsp;15 min ago, 22 Oct 2014</small></li>
+                    <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<b>Address Here: </b><small>80 Mandai Lake Road Singapore 729826</small></li>
+                    <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;<b>Phone Number Here: </b><small>(65) 6269 3411</small></li>
+                    <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;<b>Website Here: </b><small> http://www.zoo.com.sg</small></li>
                     <li class="list-group-item">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu dictum est. Donec lobortis quam nec purus mattis, in semper ex tempor. Sed mi elit, convallis vitae augue a, finibus consectetur elit.
                     </li>
