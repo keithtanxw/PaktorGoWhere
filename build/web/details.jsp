@@ -142,54 +142,53 @@
                                         <span class="list-text-heavy">IU</span><br />
                                         <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
                                     </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span></td>
 
-                                            <tr>
-                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
-                                                <td>
-                                                    <span class="list-text-heavy">Andy Lau</span><br />
-                                                    <span class="list-text-subtext">Cantonese <a href="#">See more..</a></span>
-                                                </td>
-                                                <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">Andy Lau</span><br />
+                                        <span class="list-text-subtext">Cantonese <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
 
-                                            </tr>
-                                            <tr>
-                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
-                                                <td>
-                                                    <span class="list-text-heavy">Beckham</span><br />
-                                                    <span class="list-text-subtext">Football in the zoo rocks <a href="#">See more..</a></span>
-                                                </td>
-                                                <td class="td-friend text-center"><span class="list-text-heavy">3.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                </tr>
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">Beckham</span><br />
+                                        <span class="list-text-subtext">Football in the zoo rocks <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">3.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
 
-                                            </tr>
-                                            <tr>
-                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
-                                                <td>
-                                                    <span class="list-text-heavy">Jun Dat</span><br />
-                                                    <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
-                                                </td>
-                                                <td class="td-friend text-center"><span class="list-text-heavy">4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                </tr>
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">Jun Dat</span><br />
+                                        <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
 
-                                            </tr>
-                                            <tr>
-                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
-                                                <td>
-                                                    <span class="list-text-heavy">Taeyeon</span><br />
-                                                    <span class="list-text-subtext">kimchi rock <a href="#">See more..</a></span>
-                                                </td>
-                                                <td class="td-friend text-center"><span class="list-text-heavy">4.7/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                </tr>
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">Taeyeon</span><br />
+                                        <span class="list-text-subtext">kimchi rock <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.7/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
 
-                                            </tr>
-                                            <tr>
-                                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
-                                                <td>
-                                                    <span class="list-text-heavy">Ah Beng</span><br />
-                                                    <span class="list-text-subtext">Woohoo <a href="#">See more..</a></span>
-                                                </td>
-                                                <td class="td-friend text-center"><span class="list-text-heavy">4.1/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                </tr>
+                                <tr>
+                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
+                                    <td>
+                                        <span class="list-text-heavy">Ah Beng</span><br />
+                                        <span class="list-text-subtext">Woohoo <a href="#">See more..</a></span>
+                                    </td>
+                                    <td class="td-friend text-center"><span class="list-text-heavy">4.1/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                                </tr>
 
-                                            </tr>
-                                            
                             </table>
                             <div class="col-xs-offset-1 col-xs-10">
                                 <textarea class="form-control" rows="3"></textarea>
