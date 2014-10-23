@@ -168,16 +168,39 @@
 
     <body onload="calcRoute()">
         <div class="container-fluid">
-            <!-- Navigation Bar !-->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
+            <!----------------------------------------------------------------------------------- 
+                Nav Section 
+            !------------------------------------------------------------------------------------>
+            <nav class="navbar navbar-default navbar-fixed-top profile-nav" role="navigation">           
                 <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'details.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="#">directions</a></div>
-                <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
+                <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
-        <!-- SideNav Here !-->
-
-        <!-- Content !-->
+        <!----------------------------------------------------------------------------------- 
+            Sidenav Section 
+        !------------------------------------------------------------------------------------>
+        <nav id="sidebar-wrapper">
+            <div class="sidebar-body">
+                <div class="user-panel text-center">
+                    <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" />&nbsp;&nbsp;
+                    <span class="user-panel-text">Jundat90</span>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
+                        <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
+                        <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
+                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>                        
+                        <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
+                        <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </nav> 
+        <!----------------------------------------------------------------------------------- 
+            Content Section 
+        !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
             <div class="row text-center" style="height:200px">
                 <div id="map-canvas"></div>
