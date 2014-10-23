@@ -6,7 +6,7 @@
 // reset the search when the cancel image is clicked
 $(function() {
     $('#cancelSearch').click(function() {
-                    resetSearch();
+        resetSearch();
     });
 
     // cancel the search if the user presses the ESC key

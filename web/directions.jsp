@@ -19,8 +19,8 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css">
         <!-- Custom Navbar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
-        <!-- Google Styled Panel !-->
-        <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
+        <!-- Sidebar !-->
+        <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
 
         <style>
 
@@ -171,7 +171,7 @@
             <!----------------------------------------------------------------------------------- 
                 Nav Section 
             !------------------------------------------------------------------------------------>
-            <nav class="navbar navbar-default navbar-fixed-top profile-nav" role="navigation">           
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'details.jsp'" class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="#">directions</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
@@ -219,13 +219,14 @@
             </div><br/>
             <div class="row">
                 <div class="col-xs-12 direction-div text-center">
-                    <span class="directions-header">Select a route to take</span>
+                    <span class="heading-14">Select a route to take</span>
                     <div id="directions-panel"></div>
                 </div>       
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
 
     </body>
 </html>

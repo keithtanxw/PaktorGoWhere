@@ -62,7 +62,7 @@
         !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
             <div class="row text-center" style='margin-top:-4px'>
-                <img src="PaktorGoWhere/img/places/place3.jpg" style="height:150%; width:100%;" />
+                <img src="PaktorGoWhere/img/places/place1.jpg" style="height:150%; width:100%;" />
             </div>
             <!------------------------------------------ 
                 Tabs "Find People" & "Find Places"
@@ -81,13 +81,13 @@
             </div>
             <div class="row">
                 <ul class="list-group">
-                    <li class="list-group-item text-center"><p class="header-1" style='padding-top:10px'>Singapore Zoological Garden</p></li>
-                    <li class="list-group-item"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<b>Opening Hours: </b><small>&nbsp;&nbsp;15 min ago, 22 Oct 2014</small></li>
-                    <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<b>Address Here: </b><small>80 Mandai Lake Road Singapore 729826</small></li>
+                    <li class="list-group-item text-center"><p class="heading" style='padding-top:10px'>Shabestan Persian</p></li>
+                    <li class="list-group-item"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<b>Opening Hours: </b><small>&nbsp;&nbsp;10AM - 10PM</small></li>
+                    <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<b>Address Here: </b><small>12 Bras Basah Road, Singapore 123456</small></li>
                     <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;<b>Phone Number Here: </b><small>(65) 6269 3411</small></li>
-                    <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;<b>Website Here: </b><small> http://www.zoo.com.sg</small></li>
+                    <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;<b>Website Here: </b><small> http://www.shabestan.com.sg</small></li>
                     <li class="list-group-item">
-                        <i class="fa fa-book"></i>&nbsp;&nbsp;<b>Description: </b><small> The Singapore Zoo, formerly known as the Singapore Zoological Gardens and commonly known locally as the Mandai Zoo, occupies 28 hectares on the margins of Upper Seletar Reservoir within Singapore's heavily forested central catchment area.  </small>
+                        <i class="fa fa-book"></i>&nbsp;&nbsp;<b>Description: </b><small>Beautiful Persian styled restaurant serving Mediterranean cuisines from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss. </small>
                     </li>
                 </ul>                
             </div><!-- close top row !-->
@@ -151,12 +151,12 @@
                                         <span class="list-text-heavy">IU</span><br />
                                         <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
                                     </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span></td>
+                                    <td class="td-friend text-center"><span class="heading-10 heavy-700">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span></td>
 
                                 <tr>
                                     <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
                                     <td>
-                                        <span class="list-text-heavy">Andy Lau</span><br />
+                                        <span class="list-text-heavy">AndyLau</span><br />
                                         <span class="list-text-subtext">Cantonese <a href="#">See more..</a></span>
                                     </td>
                                     <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
@@ -165,7 +165,7 @@
                                 <tr>
                                     <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
                                     <td>
-                                        <span class="list-text-heavy">Beckham</span><br />
+                                        <span class="list-text-heavy">BeckhamD</span><br />
                                         <span class="list-text-subtext">Football in the zoo rocks <a href="#">See more..</a></span>
                                     </td>
                                     <td class="td-friend text-center"><span class="list-text-heavy">3.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
@@ -174,7 +174,7 @@
                                 <tr>
                                     <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
                                     <td>
-                                        <span class="list-text-heavy">Jun Dat</span><br />
+                                        <span class="list-text-heavy">Jundat90</span><br />
                                         <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
                                     </td>
                                     <td class="td-friend text-center"><span class="list-text-heavy">4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
@@ -192,7 +192,7 @@
                                 <tr>
                                     <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
                                     <td>
-                                        <span class="list-text-heavy">Ah Beng</span><br />
+                                        <span class="list-text-heavy">XiaoBengx</span><br />
                                         <span class="list-text-subtext">Woohoo <a href="#">See more..</a></span>
                                     </td>
                                     <td class="td-friend text-center"><span class="list-text-heavy">4.1/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>

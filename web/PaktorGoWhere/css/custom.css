@@ -78,13 +78,13 @@ body{
 }
 .heading {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
 .subheading {
     color: #888;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 0.9em;
     font-style: italic;
 }
 
@@ -332,11 +332,6 @@ body{
     padding-bottom: 15px;
 }
 
-.directions-header {
-    font-size: 24px;
-    line-height: 30px;
-}
-
 .directions-landmark {
     font-size: 13px;
     color: #999;
@@ -557,3 +552,33 @@ body{
 /*=============================================================
     LISTS
 =============================================================*/
+/*=============================================================
+    FONT SIZES
+=============================================================*/
+.heading-14 {
+    font-size: 1.4em;
+}
+
+.heading-12 {
+    font-size: 1.2em;
+}
+
+.heading-10 {
+    font-size: 1em;
+}
+
+.heading-08 {
+    font-size: 0.8em;
+}
+
+.heading-07 {
+    font-size: 0.7em;
+}
+
+.heavy-600 {
+    font-weight: 600;
+}
+
+.heavy-700 {
+    font-weight: 700;
+}
