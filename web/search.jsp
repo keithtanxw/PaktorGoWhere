@@ -174,7 +174,7 @@
                                 <td id="place1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1-sq.jpg" class="list-table-img" /></td>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/cafe1-sq.jpg" class="list-table-img" /></td>
                                 <td>
                                     <span class="list-text-heavy">Cafes</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
@@ -182,9 +182,9 @@
                                 <td id="place2" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/strolling2-sq.JPG" class="list-table-img" /></td>
                                 <td>
-                                    <span class="list-text-heavy">Motels</span><br />
+                                    <span class="list-text-heavy">Strolling/Parks</span><br />
                                     <span class="list-text-subtext">73 reviews</span>
                                 </td>
                                 <td id="place3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
@@ -206,9 +206,9 @@
                                 <td id="place5" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/strolling2-sq.JPG" class="list-table-img" /></td>
                                 <td>
-                                    <span class="list-text-heavy">Community Centres</span><br />
+                                    <span class="list-text-heavy">Walkways</span><br />
                                     <span class="list-text-subtext">62 reviews</span>
                                 </td>
                                 <td id="place6" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
