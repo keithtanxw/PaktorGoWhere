@@ -31,7 +31,7 @@ and open the template in the editor.
 /* Newsfeed Tags */
 .newsfeed-panel > .newsfeed-panel-tags {
     position: absolute;
-    margin-top: -280px;
+    margin-top: -60%;
     left: 11px;
 }
 

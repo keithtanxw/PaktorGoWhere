@@ -80,9 +80,10 @@
             !------------------------------------------->
             <div class="row surprise-section">
                 <div class="col-xs-12 col-md-offset-2 col-md-8">                  
-                    <div class="newsfeed-panel">
+                    
+                    <div class="newsfeed-panel" id="1">
                         <div class="newsfeed-panel-image">
-                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/strolling.JPG" /></a>
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/strolling2.JPG" /></a>
                         </div>
                         <div class="newsfeed-panel-tags">
                             <ul>
@@ -90,7 +91,7 @@
                             </ul>
                         </div>
                         <div class="newsfeed-panel-comments">
-                            <span class="heading">Fort Canning Park</span>&nbsp;&nbsp;<span class="subheading">Dhoby Ghaut</span>
+                            <span class="heading">Henderson Waves</span>&nbsp;&nbsp;<span class="subheading">Telok Blangah</span>
                             <br /><br />                            
                             <span>Tucked away in a forested part of the city, enjoy a nice stroll with your loved one here</span>
                         </div>
@@ -103,6 +104,33 @@
                             </div>
                             <div class="col-xs-4 col-md-4 text-center right-side">
                                 <a href="details.jsp"><span>12 reviews</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="newsfeed-panel" id="2">
+                        <div class="newsfeed-panel-image">
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/cafe1.JPG" /></a>
+                        </div>
+                        <div class="newsfeed-panel-tags">
+                            <ul>
+                                <li>#cafe</li>
+                            </ul>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span class="heading">Lover's Cafe</span>&nbsp;&nbsp;<span class="subheading">Tiong Bahru</span>
+                            <br /><br />                            
+                            <span>Cosy cafe for couples to enjoy, relax and embrace each other's love</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <div class="col-xs-3 col-md-4 text-center left-side">
+                                <span>4.0&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="col-xs-5 col-md-4 text-center left-side">
+                                <span>$12 per person</span>
+                            </div>
+                            <div class="col-xs-4 col-md-4 text-center right-side">
+                                <a href="details.jsp"><span>32 reviews</span></a>
                             </div>
                         </div>
                     </div>

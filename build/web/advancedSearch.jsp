@@ -14,7 +14,7 @@
         <!-- Custom Navbar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css" type="text/css">
         <!-- Google Styled Panel !-->
-        <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">
+        <!--<link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css" type="text/css">-->
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
 
@@ -58,14 +58,18 @@
 
     <body>
         <div class="container-fluid">
-            <!-- Navigation Bar !-->
+            <!----------------------------------------------------------------------------------- 
+                Nav Section 
+            !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Advance Search</a></div>
+                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">surprise me</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
-        <!-- SideNav Here !-->
+        <!----------------------------------------------------------------------------------- 
+            Sidenav Section 
+        !------------------------------------------------------------------------------------>
         <nav id="sidebar-wrapper">
             <div class="sidebar-body">
                 <div class="user-panel text-center">
@@ -74,25 +78,23 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul>
+                        <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
+                        <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
                         <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                        <li><a href="findPeople.jsp"><i class="fa fa-users"></i>&nbsp;&nbsp;Followers</a></li>
-                        <li><a href=#><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
-                        <li><a href=#><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
-                        <li><a href=#><i class="fa fa-gear"></i>&nbsp;&nbsp;Newsfeed Settings</a></li>
+                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>                        
+                        <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
+                        <li><a href="#"><i class="fa fa-gear"></i>&nbsp;&nbsp;Settings</a></li>
+                        <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
                 </div>                
             </div>
         </nav>
 
-        <!-- Content !-->
-        <section class="container-fluid header-content">
-            <div class="col-xs-12 text-center">
-                <!-- TODO: DYNAMIC HEADER !-->
-                <span class="header-1">ADVANCED SEARCH</span>
-            </div>
-        </section>
+        <!----------------------------------------------------------------------------------- 
+            Content Section 
+        !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
-            <div class="row">
+            <div class="row paktor-now-section">
                 <div class="panel" style="min-height: 50px">
                     <div class="panel-heading">
                         <div class="col-xs-6 text-left">
@@ -147,7 +149,7 @@
                                         <td>
                                             <span class="list-text-heavy">Food For Thought</span><br />
                                             <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                            <span class="list-text-subtext">Dhoby Ghaut</span>
                                         </td>
                                         <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
                                     <strong>200m</strong>&nbsp;away</span><br /></td>
