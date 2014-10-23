@@ -54,7 +54,55 @@ body{
    background-color: #32353b;
    padding-bottom: 10px;
 }
+/*=============================================================
+   NEWSFEED
+=============================================================*/
+.paktor-tab {
+    margin: 10px 15px 0px;
+    padding-bottom: 10px;
+    padding-top: 13px;
+    height: 50px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
 
+.paktor-tab:hover {
+    cursor: pointer;
+}
+
+.paktor-tab .paktor-tab-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.newsfeed-section {
+    padding-top: 18px;
+}
+
+.blue-tab {
+    background-color: #1dbbe9;
+    border-bottom: 6px solid #1badd7;
+    color: #f5f5f5;
+}
+
+.blue-tab:hover {
+    background-color: #21cbfc;
+    border-bottom: 6px solid #29bcd2;
+    color: #fff;
+}
+
+.blue-tab:active {
+    background-color: #21cbfc;
+    border-bottom: 6px solid #29bcd2;
+    color: #fff;
+}
+
+
+/*=============================================================
+   END NEWSFEED
+==============================================================*/
 .profile-header {
     height: 300px;
     padding-top: 25px;

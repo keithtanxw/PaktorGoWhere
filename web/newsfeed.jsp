@@ -58,12 +58,61 @@
             </div>
         </nav> 
         
-        <!-- Content !-->
+        <!----------------------------------------------------------------------------------- 
+            Content Section 
+        !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
+            <!------------------------------------------ 
+                Tabs "Go Paktor"
+            !------------------------------------------->
             <div class="row">
-                <div class="col-xs-12 col-md-offset-2 col-md-8">
-                    
-                    <!-- THIS IS DYNAMIC !-->
+                <div class="paktor-tab blue-tab" id="goPaktor">
+                    <div class="col-xs-12 text-center">
+                        <span class="paktor-tab-text"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!------------------------------------------ 
+                Newsfeed Section
+            !------------------------------------------->
+            <div class="row newsfeed-section">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">                  
+                    <div class="newsfeed-panel">
+                        <div class="newsfeed-panel-image">
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/strolling.JPG" /></a>
+                        </div>
+                        <div class="newsfeed-panel-tags">
+                            <ul>
+                                <li>#strolling</li>
+                            </ul>
+                        </div>
+                        <div class="newsfeed-panel-user">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="PaktorGoWhere/img/profilepics/iu.jpg" class="img-circle" alt="User Image" />
+                            </div>
+                            <div class="col-xs-10 col-md-11" style="padding-top:5px">
+                                <a href="#">
+                                    <span>IU</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span>Great place to chill with your loved one</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <div class="col-xs-3 col-md-4 text-center left-side">
+                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="col-xs-5 col-md-4 text-center left-side">
+                                <span>$13 per person</span>
+                            </div>
+                            <div class="col-xs-4 col-md-4 text-center right-side">
+                                <a href="details.jsp"><span>12 reviews</span></a>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="newsfeed-panel">
                         <div class="newsfeed-panel-image">
@@ -80,8 +129,8 @@
                             </div>
                             <div class="col-xs-10 col-md-11" style="padding-top:5px">
                                 <a href="#">
-                                    <span>jundat90</span><br/>
-                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                    <span>Jundat90</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;35 min ago, 22 Oct 2014</span>
                                 </a>
                             </div>
                         </div>
@@ -90,54 +139,19 @@
                         </div>
                         <div class="newsfeed-panel-footer">
                             <div class="col-xs-3 col-md-4 text-center left-side">
-                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                                <span>4.2&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
                             </div>
                             <div class="col-xs-5 col-md-4 text-center left-side">
-                                <span>$13 per person</span>
+                                <span>$12 per person</span>
                             </div>
                             <div class="col-xs-4 col-md-4 text-center right-side">
-                                <a href="details.jsp"><span>12 reviews</span></a>
+                                <a href="details.jsp"><span>11 reviews</span></a>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <div class="newsfeed-panel">
-                        <div class="newsfeed-panel-image">
-                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/place1.jpg" /></a>
-                        </div>
-                        <div class="newsfeed-panel-tags">
-                            <ul>
-                                <li>#cafe</li>
-                            </ul>
-                        </div>
-                        <div class="newsfeed-panel-user">
-                            <div class="col-xs-2 col-md-1">
-                                <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle" alt="User Image" />
-                            </div>
-                            <div class="col-xs-10 col-md-11" style="padding-top:5px">
-                                <a href="#">
-                                    <span>jundat90</span><br/>
-                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="newsfeed-panel-comments">
-                            <span>Perfect place for a date. Do try out the Crusted Apple Pie!</span>
-                        </div>
-                        <div class="newsfeed-panel-footer">
-                            <div class="col-xs-3 col-md-4 text-center left-side">
-                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-                            </div>
-                            <div class="col-xs-5 col-md-4 text-center left-side">
-                                <span>$13 per person</span>
-                            </div>
-                            <div class="col-xs-4 col-md-4 text-center right-side">
-                                <a href="details.jsp"><span>12 reviews</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- THIS IS DYNAMIC !-->
+                    <!------------------------------------------ 
+                        End Newsfeed Posts
+                    !------------------------------------------->                           
                 
                 </div>               
             </div>
