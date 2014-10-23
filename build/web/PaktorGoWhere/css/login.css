@@ -151,8 +151,8 @@ body {
 
 .btn-default {
   color: #f5f5f5;
-  background-color: #d01716;
-  border-color: #b0120a;
+  background-color: #fa2255;
+  border-color: #ef1e4f;
   border-bottom-width: 5px;
 }
 .btn-default:hover,
@@ -160,8 +160,8 @@ body {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #f5f5f5;
-  background-color: #e51c23;
-  border-color: #d01716;
+  color: #fff;
+  background-color: #fb446f;
+  border-color: #f0416a;
 }
 
