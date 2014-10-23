@@ -14,7 +14,7 @@
         <!-- Base Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/bootstrap.css">
         <link rel="stylesheet" href="PaktorGoWhere/css/font-awesome.css">
-        
+
         <!-- Custom Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css">
         <!-- Sidebar !-->
@@ -23,8 +23,26 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
         <!-- Newsfeed Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/newsfeedPanel.css">
-        
-        
+
+
+   
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("h1").hide();
+                $("#2").hide();
+                $("#1").on("swipe", function() {
+                    $(this).hide();
+                    $("#2").show();
+                });
+                $("#2").on("swipe", function() {
+                    $(this).hide();
+                    $("#1").show();
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container-fluid">
@@ -32,7 +50,7 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left" onclick="window.location.href='goPaktor.jsp'"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-3 menu-left" onclick="window.location.href = 'goPaktor.jsp'"><i class="fa fa-chevron-left"></i></div>
                 <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">surprise me</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
@@ -58,7 +76,7 @@
                 </div>                
             </div>
         </nav> 
-        
+
         <!----------------------------------------------------------------------------------- 
             Content Section 
         !------------------------------------------------------------------------------------>
@@ -74,13 +92,13 @@
                     </form>
                 </div>
             </div><br />
-            
+
             <!------------------------------------------ 
                 Newsfeed Section
             !------------------------------------------->
             <div class="row surprise-section">
                 <div class="col-xs-12 col-md-offset-2 col-md-8">                  
-                    
+
                     <div class="newsfeed-panel" id="1">
                         <div class="newsfeed-panel-image">
                             <a href="details.jsp"><img src="PaktorGoWhere/img/places/strolling2.JPG" /></a>
@@ -107,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="newsfeed-panel" id="2">
                         <div class="newsfeed-panel-image">
                             <a href="details.jsp"><img src="PaktorGoWhere/img/places/cafe1.JPG" /></a>
@@ -134,17 +152,18 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <!------------------------------------------ 
                         End Newsfeed Posts
                     !------------------------------------------->                           
-                
+
                 </div>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
-        
+            </div>
+
+            
+            <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
+
     </body>
 </html>
