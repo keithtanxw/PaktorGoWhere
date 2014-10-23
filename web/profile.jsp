@@ -83,7 +83,7 @@
         </div>    
         <div class="container-fluid main-content">
             <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 text-center profile-content">
+                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-center profile-content">
                     <p>I think food is an art, culture and part of our lives</p>
                     <br />
                 </div>

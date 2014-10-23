@@ -21,10 +21,10 @@
     <body>
         <div class="overlay">
             <div class="container-fluid" id="mainSection">                
-                <div class="col-xs-8 col-xs-offset-2 text-center" id="logoSection">
-                    <h3>PaktorGoWhere</h3>
+                <div class="col-xs-12 col-md-4 col-md-offset-4 text-center" id="logoSection">
+                    <h3>paktorgowhere</h3>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1" id="logoSection">
+                <div class="col-xs-12 col-md-4 col-md-offset-4" id="logoSection">
                     <div class="login-panel">
                         <div class="login-body">
                             <form role="form">

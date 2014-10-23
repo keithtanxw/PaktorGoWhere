@@ -29,6 +29,7 @@ and open the template in the editor.
     font-weight: 700;
     text-transform: lowercase;
     letter-spacing: 2px;
+    overflow-y: auto;
 }
 
 #sidebar-wrapper.active {
@@ -84,7 +85,7 @@ and open the template in the editor.
 
 .sidebar-body .sidebar-menu li {
     line-height: 50px;
-    font-size: 19px;
+    font-size: 1.2em;
     /*font-weight: 500;*/
     /*text-transform: uppercase;*/
     letter-spacing: 1px;

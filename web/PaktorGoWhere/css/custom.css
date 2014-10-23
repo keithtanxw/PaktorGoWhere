@@ -14,7 +14,7 @@ body{
     overflow-x: hidden!important;
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: 500;
     min-height: 100%;
     background: #E7E7EE;
@@ -163,10 +163,10 @@ body{
     
     font-family: 'Lobster Two', cursive;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5em;
     font-style: italic;
-    line-height: 40px;    
-    letter-spacing: 3px;
+    line-height: 1.8em;    
+    letter-spacing: 0.3em;
         
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -259,16 +259,16 @@ body{
 }
 
 .go-paktor-content {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .go-paktor-text {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 4em;
+    line-height: 4em;
     color: #fff;
 }
 
@@ -368,8 +368,8 @@ body{
 
 .menu-tab .menu-tab-text {
     font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 .white-tab {
@@ -485,13 +485,13 @@ body{
 
 .list-text-heavy {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1em;
 }
 
 .list-text-subtext {
     color: #999;
     font-style: italic;
-    font-size: 14px;
+    font-size: 0.8em;
 }
 
 
