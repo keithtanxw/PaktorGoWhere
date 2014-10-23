@@ -216,6 +216,15 @@ public final class directions_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!-- SideNav Here !-->\r\n");
       out.write("\r\n");
       out.write("        <!-- Content !-->\r\n");
+<<<<<<< HEAD
+=======
+      out.write("        <section class=\"container-fluid header-content\">\r\n");
+      out.write("            <div class=\"col-xs-12 text-center header-text\">\r\n");
+      out.write("                <!-- TODO: DYNAMIC HEADER !-->\r\n");
+      out.write("                <span class=\"header-1\">DIRECTIONS</span>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+>>>>>>> 19a2de49baacd01d4c195ed7757269c480964888
       out.write("        <div class=\"container-fluid main-content\">\r\n");
       out.write("            <div class=\"row text-center\" style=\"height:200px\">\r\n");
       out.write("                <div id=\"map-canvas\"></div>\r\n");
@@ -238,8 +247,11 @@ public final class directions_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("            <div class=\"row\">\r\n");
       out.write("                <div class=\"col-xs-12 direction-div\">\r\n");
+<<<<<<< HEAD
       out.write("                    <div id=\"directions-panel\"></div>\r\n");
       out.write("                    <!--\r\n");
+=======
+>>>>>>> 19a2de49baacd01d4c195ed7757269c480964888
       out.write("                    <div class=\"directions-head-section\">\r\n");
       out.write("                        <p class=\"directions-header\">Drive 0.82km, 6 min</p>\r\n");
       out.write("                        <div id=\"directions-panel\"></div>\r\n");
@@ -297,7 +309,11 @@ public final class directions_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"col-xs-12 end\">\r\n");
       out.write("                        <h4><i class=\"fa fa-circle\"></i>&nbsp;&nbsp;Destination</h4>\r\n");
+<<<<<<< HEAD
       out.write("                    </div>-->\r\n");
+=======
+      out.write("                    </div>\r\n");
+>>>>>>> 19a2de49baacd01d4c195ed7757269c480964888
       out.write("                </div>       \r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");

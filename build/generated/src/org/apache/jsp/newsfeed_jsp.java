@@ -97,6 +97,7 @@ public final class newsfeed_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\r\n");
       out.write("        </nav> \r\n");
       out.write("        \r\n");
+<<<<<<< HEAD
       out.write("        <!----------------------------------------------------------------------------------- \r\n");
       out.write("            Content Section \r\n");
       out.write("        !------------------------------------------------------------------------------------>\r\n");
@@ -118,6 +119,15 @@ public final class newsfeed_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \r\n");
       out.write("            <div class=\"row\">\r\n");
       out.write("                <div class=\"col-xs-12 col-md-offset-2 col-md-8\">                  \r\n");
+=======
+      out.write("        <!-- Content !-->\r\n");
+      out.write("        <div class=\"container-fluid main-content\">\r\n");
+      out.write("            <div class=\"row\">\r\n");
+      out.write("                <div class=\"col-xs-12 col-md-offset-2 col-md-8\">\r\n");
+      out.write("                    \r\n");
+      out.write("                    <!-- THIS IS DYNAMIC !-->\r\n");
+      out.write("                    \r\n");
+>>>>>>> 19a2de49baacd01d4c195ed7757269c480964888
       out.write("                    <div class=\"newsfeed-panel\">\r\n");
       out.write("                        <div class=\"newsfeed-panel-image\">\r\n");
       out.write("                            <a href=\"details.jsp\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" /></a>\r\n");

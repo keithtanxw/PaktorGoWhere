@@ -37,15 +37,15 @@
                                 <div class="form-group">
                                         <input type="checkbox" name="remember_me"/> Remember me
                                 </div>
-                                <a href="newsfeed.jsp" class="btn btn-default btn-lg btn-block">Log in</a>                  
+                                <a href="newsfeed.jsp" class="btn btn-default btn-lg btn-block" onclick="window.location.href='newsfeed.jsp'">Log in</a>                  
                             </form>
                         </div>
                         <div class="login-footer text-center">
                             <span style="color:#444">Sign in using social networks</span>
                             <br/>
-                            <button class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>
-                            <button class="btn bg-aqua btn-circle"><i class="fa fa-twitter"></i></button>
-                            <button class="btn bg-red btn-circle"><i class="fa fa-google-plus"></i></button>
+                            <button onclick="window.location.href='newsfeed.jsp'" class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>
+                            <button onclick="window.location.href='newsfeed.jsp'" class="btn bg-aqua btn-circle"><i class="fa fa-twitter"></i></button>
+                            <button onclick="window.location.href='newsfeed.jsp'" class="btn bg-red btn-circle"><i class="fa fa-google-plus"></i></button>
                         </div>
                         
                     </div>
