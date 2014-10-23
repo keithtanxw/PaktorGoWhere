@@ -1,0 +1,143 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : PaktorGoWhere
+*/
+
+.newsfeed-panel {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+          box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.newsfeed-panel:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 3px 2px rgba(0, 0, 0, .1);
+          box-shadow: 0 3px 3px 2px rgba(0, 0, 0, .1);
+}
+
+.newsfeed-panel > a {
+    text-decoration: none;
+    color: #303030;
+}
+
+/* Newsfeed Tags */
+.newsfeed-panel > .newsfeed-panel-tags {
+    position: absolute;
+    top: 35px;
+    left: 11px;
+}
+
+.newsfeed-panel > .newsfeed-panel-tags > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);   
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25); 
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul:hover {
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);   
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);   
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul > li {
+    display: block;
+    /*left: 0px;*/
+    width: 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(66, 127, 237);
+    font-size: 16px;
+    overflow: hidden;
+    color: #f5f5f5;
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul > li::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul:hover > li,
+.newsfeed-panel > .newsfeed-panel-tags > ul > li:first-child {
+    padding: 5px 15px 5px 10px;
+    width: auto;
+    cursor: pointer;
+    margin-left: auto;
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul:hover > li {
+    background-color: rgb(255, 255, 255);   
+}
+.newsfeed-panel > .newsfeed-panel-tags > ul > li:hover {
+    background-color: rgb(72, 137, 255);
+    color: rgb(255, 255, 255);
+}
+/* End Newsfeed Tags */
+
+.newsfeed-panel-user {
+    padding: 15px;
+}
+
+.newsfeed-panel-user > div > a {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #303030;
+    padding: auto;
+}
+
+.newsfeed-panel-user > div > img {
+    width: 50px;
+    height: auto;
+}
+
+
+.newsfeed-panel-user .date {
+    font-size: 13px;
+    color: #777;
+    margin-left: 4px;
+}
+
+.newsfeed-panel-comments {
+    clear: both;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.newsfeed-panel-footer {
+    padding: 10px 20px 30px;
+    margin-bottom: 10px;
+    border-top: 2px solid #e1e1e1;
+    line-height: 20px;
+}
+
+.newsfeed-panel-footer a {
+    color: #303030;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.newsfeed-panel-footer .left-side {
+    border-right: 2px solid #e1e1e1;    
+}
+
+.newsfeed-panel-image {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.newsfeed-panel-image > a > img {
+    max-width: 100%;
+}
+
+.newsfeed-panel-body {
+    padding: 15px;
+}
+
