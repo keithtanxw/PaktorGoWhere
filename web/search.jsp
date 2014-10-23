@@ -14,16 +14,16 @@
         <!-- Base Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/bootstrap.css">
         <link rel="stylesheet" href="PaktorGoWhere/css/font-awesome.css">
-        
+
         <!-- Custom Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css">
         <!-- Custom Navbar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
-        
+
     </head>
-    <body>
+    <body onload="settingsForToggleTab()">
         <!----------------------------------------------------------------------------------- 
             Headnav Section 
         !------------------------------------------------------------------------------------>
@@ -67,12 +67,12 @@
                 Tabs "Find People" & "Find Places"
             !------------------------------------------->
             <div class="row">
-                <div class="menu-tab turqoise-tab">
+                <div class="menu-tab turqoise-tab" id="findPerson" onclick="toggleTab(this.id)">
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-group"></i>&nbsp;&nbsp;Find People</span>
                     </div>
                 </div>
-                <div class="menu-tab turqoise-tab">
+                <div class="menu-tab turqoise-tab" id="findPlaces" onclick="toggleTab(this.id)">
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Find Places</span>
                     </div>
@@ -81,7 +81,7 @@
             <!------------------------------------------ 
                 Search Bar
             !------------------------------------------->
-            <div class="row search-bar">                
+            <div class="row search-bar" id="findPersonBar">                
                 <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
                     <form role="form">
                         <!-- TODO: This input has to be dynamic !-->
@@ -93,7 +93,7 @@
                 List Section
             !------------------------------------------->      
             <div class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="col-xs-12 col-md-10 col-md-offset-1" id="findPersonInfo">
                     <div class="panel panel-default">
                         <table class="table table-hover" id="list-table">
                             <tr>
@@ -147,14 +147,106 @@
                         </table>
                     </div>
                 </div>
-                
             </div>
+            <!------------------------------------------ 
+                Search Bar
+            !------------------------------------------->
+            <div class="row search-bar" id="findPlacesBar">                
+                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+                    <form role="form">
+                        <!-- TODO: This input has to be dynamic !-->
+                        <input type="text" class="form-control" id="searchTextbox" placeholder="Enter name of place">
+                    </form>
+                </div>
+            </div><br />
+            <!------------------------------------------ 
+                List Section
+            !------------------------------------------->      
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1" id="findPlacesInfo">
+                    <div class="panel panel-default">
+                        <table class="table table-hover" id="list-table">
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Luxury Restaurants</span><br />
+                                    <span class="list-text-subtext">12 reviews</span>
+                                </td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                            </tr>
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Cafes</span><br />
+                                    <span class="list-text-subtext">32 reviews</span>
+                                </td>
+                                <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
+                            </tr>
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Motels</span><br />
+                                    <span class="list-text-subtext">73 reviews</span>
+                                </td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                            </tr>
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Hotels</span><br />
+                                    <span class="list-text-subtext">40 reviews</span>
+                                </td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                            </tr>
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Water Sports</span><br />
+                                    <span class="list-text-subtext">55 reviews</span>
+                                </td>
+                                <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
+                            </tr>
+                            <tr>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td>
+                                    <span class="list-text-heavy">Community Centres</span><br />
+                                    <span class="list-text-subtext">62 reviews</span>
+                                </td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
         <!-- Search Box's Javascript !-->
         <script src="PaktorGoWhere/js/plugins/searchbox.js" type="text/javascript"></script>
-        
+
+
+        <script>
+                    function settingsForToggleTab() {
+                        $("#findPlacesBar").hide();
+                        $("#findPlacesInfo").hide();
+                    }
+
+                    function toggleTab(id) {
+                        if (id === "findPerson") {
+                            $("#findPlacesBar").hide();
+                            $("#findPlacesInfo").hide();
+                            $("#findPersonBar").show();
+                            $("#findPersonInfo").show();
+                        } else if (id === "findPlaces") {
+                            
+                            $("#findPersonBar").hide();
+                            $("#findPersonInfo").hide();
+                            $("#findPlacesBar").show();
+                            $("#findPlacesInfo").show();
+                        }
+                    }
+        </script>
     </body>
 </html>
