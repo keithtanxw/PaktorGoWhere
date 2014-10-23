@@ -26,12 +26,17 @@
         
     </head>
     <body>
+        <!----------------------------------------------------------------------------------- 
+            Profile BG Section 
+        !------------------------------------------------------------------------------------>
         <div class="profile-bg">
             <div class="container-fluid">
-                <!-- Navigation Bar !-->
+                <!----------------------------------------------------------------------------------- 
+                    Nav Section 
+                !------------------------------------------------------------------------------------>
                 <nav class="navbar navbar-default navbar-fixed-top profile-nav" role="navigation">           
                     <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                    <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">PAKTORGoWHERE</a></div>
+                    <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Profile</a></div>
                     <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
                 </nav>
             </div>
@@ -57,15 +62,9 @@
                     </div>                
                 </div>
             </nav> 
-            
-            <!-- Content !-->
-            
-            <section class="container-fluid profile-header-content">
-                <!--<div class="col-xs-12 text-center">
-                    <!-- TODO: DYNAMIC HEADER !--><!--
-                    <span class="header-1">My Profile</span>
-                </div>-->
-            </section>
+            <!----------------------------------------------------------------------------------- 
+                Content Section 
+            !------------------------------------------------------------------------------------>
             <!-- Profile Image Section !-->
             <div class="container-fluid profile-header">
                 <div class="row-fluid">

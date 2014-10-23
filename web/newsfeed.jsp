@@ -28,7 +28,9 @@
     </head>
     <body>
         <div class="container-fluid">
-            <!-- Navigation Bar !-->
+            <!----------------------------------------------------------------------------------- 
+                Nav Section 
+            !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"></div>
                 <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Newsfeed</a></div>
