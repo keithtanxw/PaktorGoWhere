@@ -67,7 +67,7 @@
                 Tabs "Go Paktor"
             !------------------------------------------->
             <div class="row">
-                <div class="paktor-tab blue-tab" id="goPaktor">
+                <div class="paktor-tab blue-tab" id="goPaktor" onclick="window.location.href='goPaktor.jsp'">
                     <div class="col-xs-12 text-center">
                         <span class="paktor-tab-text"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</span>
                     </div>

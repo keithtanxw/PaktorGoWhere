@@ -32,8 +32,8 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Newsfeed</a></div>
+                <div class="col-xs-3 menu-left"  onclick="window.location.href='newsfeed.jsp'"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Go Paktor</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -73,7 +73,7 @@
                     <!----------------------------------------------------------------------------------- 
                         Paktor Now Section 
                     !------------------------------------------------------------------------------------>
-                    <div class="paktor-panel paktor-now">                        
+                    <div class="paktor-panel paktor-now" onclick="window.location.href='advancedSearch.jsp'">                        
                         <div class="go-paktor-content">
                             <span class="go-paktor-text">PaktorNow</span>
                         </div>                        
@@ -81,7 +81,7 @@
                     <!----------------------------------------------------------------------------------- 
                         Surprise Me Section 
                     !------------------------------------------------------------------------------------>
-                    <div class="paktor-panel surprise-me">                        
+                    <div class="paktor-panel surprise-me" onclick="window.location.href='surpriseMe.jsp'">                        
                         <div class="go-paktor-content">
                             <span class="go-paktor-text">Surprise Me</span>
                         </div>
