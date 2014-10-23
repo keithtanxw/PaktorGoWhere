@@ -37,7 +37,7 @@
                                 <div class="form-group">
                                         <input type="checkbox" name="remember_me"/> Remember me
                                 </div>
-                                <button class="btn btn-default btn-lg btn-block">Log in</button>                  
+                                <a href="newsfeed.jsp" class="btn btn-default btn-lg btn-block">Log in</a>                  
                             </form>
                         </div>
                         <div class="login-footer text-center">
