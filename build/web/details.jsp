@@ -61,18 +61,27 @@
             Content Section
         !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
-            <div class="row text-center">
+            <div class="row text-center" style='margin-top:-4px'>
                 <img src="PaktorGoWhere/img/places/place3.jpg" style="height:150%; width:100%;" />
             </div>
-            <div class="row text-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-lg btn-default" onclick="window.location.href = 'directions.jsp'"><i class="fa fa-share"></i>&nbsp;&nbsp;Directions</button>
-                    <button type="button" class="btn btn-lg btn-success" onclick="window.location.href = 'bookmarks.jsp'"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmark</button>
+            <!------------------------------------------ 
+                Tabs "Find People" & "Find Places"
+            !------------------------------------------->
+            <div class="row">
+                <div class="menu-tab turqoise-tab" id="findPerson" onclick="window.location.href = 'directions.jsp'">
+                    <div class="col-xs-12 text-center">
+                        <span class="menu-tab-text"><i class="fa fa-share"></i>&nbsp;&nbsp;Directions</span>
+                    </div>
                 </div>
-            </div><br/><br />
+                <div class="menu-tab turqoise-tab" id="findPlaces" onclick="window.location.href = 'bookmarks.jsp'">
+                    <div class="col-xs-12 text-center">
+                        <span class="menu-tab-text"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmarks</span>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <ul class="list-group">
-                    <li class="list-group-item text-center"><p class="header-1">Singapore Zoological Garden</p></li>
+                    <li class="list-group-item text-center"><p class="header-1" style='padding-top:10px'>Singapore Zoological Garden</p></li>
                     <li class="list-group-item"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<b>Opening Hours: </b><small>&nbsp;&nbsp;15 min ago, 22 Oct 2014</small></li>
                     <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<b>Address Here: </b><small>80 Mandai Lake Road Singapore 729826</small></li>
                     <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;<b>Phone Number Here: </b><small>(65) 6269 3411</small></li>
@@ -120,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="row" style="background-color: white">
+            <div class="row">
                 <div class="col-xs-12 text-center">
                     <div class="row">
                         <div class="menu-tab turqoise-tab">
@@ -190,12 +199,13 @@
                                 </tr>
 
                             </table>
-                            <div class="col-xs-offset-1 col-xs-10">
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class='row text-center' style='padding-bottom: 30px'>
+                <button class='btn btn-lg btn-primary'>Add comment</button>
             </div>
 
         </div>
