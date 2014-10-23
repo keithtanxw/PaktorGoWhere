@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
         <!-- Google Styled Panel !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
+        <link rel="stylesheet" href="PaktorGoWhere/css/newsfeedPanel.css">
         
     </head>
     <body>
@@ -34,7 +35,9 @@
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
-        <!-- SideNav Here !-->
+        <!----------------------------------------------------------------------------------- 
+            Sidenav Section 
+        !------------------------------------------------------------------------------------>
         <nav id="sidebar-wrapper">
             <div class="sidebar-body">
                 <div class="user-panel text-center">
@@ -43,152 +46,100 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul>
+                        <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
                         <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                        <li><a href="findPeople.jsp"><i class="fa fa-users"></i>&nbsp;&nbsp;Followers</a></li>
-                        <li><a href=#><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
-                        <li><a href=#><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
-                        <li><a href=#><i class="fa fa-gear"></i>&nbsp;&nbsp;Newsfeed Settings</a></li>
+                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>
+                        <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
+                        <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
+                        <li><a href="#"><i class="fa fa-gear"></i>&nbsp;&nbsp;Settings</a></li>
+                        <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
                 </div>                
             </div>
-        </nav>
+        </nav> 
         
         <!-- Content !-->
         <div class="container-fluid main-content">
             <div class="row">
                 <div class="col-xs-12 col-md-offset-2 col-md-8">
-                    <div class="[ panel panel-default ] panel-google-plus">
-                        <div class="panel-google-plus-tags">
+                    
+                    <!-- THIS IS DYNAMIC !-->
+                    
+                    <div class="newsfeed-panel">
+                        <div class="newsfeed-panel-image">
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/place1.jpg" /></a>
+                        </div>
+                        <div class="newsfeed-panel-tags">
                             <ul>
-                                <li>#Cafe</li>
+                                <li>#cafe</li>
                             </ul>
                         </div>
-                        <div class="panel-heading">
-                            <img class="img-circle pull-left userPic-small" src="PaktorGoWhere/img/profilepics/jundat.jpg" />
-                            <h3>Ngoh Jun Dat</h3>
-                            <h5><span>20 mins ago</span> - <span>Jun 25, 2014</span> </h5>
-                        </div>
-                        <br>
-                        <div class="panel-body">
-                            <p>Just had the most wonderful experience at Ku-de-TA</p> 
-                            <a class="panel-google-plus-image" href="details.jsp">
-                                <img src="PaktorGoWhere/img/places/place1.jpg" />
-                            </a>
-                        </div>
-                        <div class="panel-footer">
-                            <button type="button" class="[ btn btn-default ]">+1</button>
-                            <button type="button" class="[ btn btn-default ]">
-                                <span class="[ glyphicon glyphicon-share-alt ]"></span>
-                            </button>
-                            <div class="input-placeholder">Add a comment...</div>
-                        </div>
-                        <div class="panel-google-plus-comment">
-                            <img class="img-circle" src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s46" alt="User Image" />
-                            <div class="panel-google-plus-textarea">
-                                <textarea rows="4"></textarea>
-                                <button type="submit" class="[ btn btn-success disabled ]">Post comment</button>
-                                <button type="reset" class="[ btn btn-default ]">Cancel</button>
+                        <div class="newsfeed-panel-user">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle" alt="User Image" />
                             </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-
-                    <div class="[ panel panel-default ] panel-google-plus">
-                        <div class="dropdown">
-                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                <span class="[ glyphicon glyphicon-chevron-down ]"></span>
-                            </span>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <div class="panel-google-plus-tags">
-                            <ul>
-                                <li>#Cafe</li>
-                            </ul>
-                        </div>
-                        <div class="panel-heading">
-                            <img class="[ img-circle pull-left ]" src="AdminDashboard/img/jundat.jpg" style="max-height:60px;max-width: 60px" alt="Mouse0270" />
-                            <h3>Ngoh Jun Dat</h3>
-                            <h5><span>20 mins ago</span> - <span>Jun 25, 2014</span> </h5>
-                        </div>
-                        <br>
-                        <div class="panel-body">
-                            <p>Just had the most wonderful experience at Ku-de-TA</p> 
-                            <a class="panel-google-plus-image" href="details.jsp">
-                                <img src="AdminDashboard/img/loginDating.jpg" />
-                            </a>
-                        </div>
-                        <div class="panel-footer">
-                            <button type="button" class="[ btn btn-default ]">+1</button>
-                            <button type="button" class="[ btn btn-default ]">
-                                <i class="glyphicon glyphicon-share-alt"></i>
-                            </button>
-                            <div class="input-placeholder">Add a comment...</div>
-                        </div>
-                        <div class="panel-google-plus-comment">
-                            <img class="img-circle" src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s46" alt="User Image" />
-                            <div class="panel-google-plus-textarea">
-                                <textarea rows="4"></textarea>
-                                <button type="submit" class="[ btn btn-success disabled ]">Post comment</button>
-                                <button type="reset" class="[ btn btn-default ]">Cancel</button>
+                            <div class="col-xs-10 col-md-11" style="padding-top:5px">
+                                <a href="#">
+                                    <span>jundat90</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
                             </div>
-                            <div class="clearfix"></div>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span>Perfect place for a date. Do try out the Crusted Apple Pie!</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <div class="col-xs-3 col-md-4 text-center left-side">
+                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="col-xs-5 col-md-4 text-center left-side">
+                                <span>$13 per person</span>
+                            </div>
+                            <div class="col-xs-4 col-md-4 text-center right-side">
+                                <a href="details.jsp"><span>12 reviews</span></a>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="[ panel panel-default ] panel-google-plus">
-                        <div class="dropdown">
-                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                <span class="[ glyphicon glyphicon-chevron-down ]"></span>
-                            </span>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                            </ul>
+                    
+                    <div class="newsfeed-panel">
+                        <div class="newsfeed-panel-image">
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/place1.jpg" /></a>
                         </div>
-                        <div class="panel-google-plus-tags">
+                        <div class="newsfeed-panel-tags">
                             <ul>
-                                <li>#Cafe</li>
+                                <li>#cafe</li>
                             </ul>
                         </div>
-                        <div class="panel-heading">
-                            <img class="[ img-circle pull-left ]" src="AdminDashboard/img/jundat.jpg" style="max-height:60px;max-width: 60px" alt="Mouse0270" />
-                            <h3>Ngoh Jun Dat</h3>
-                            <h5><span>20 mins ago</span> - <span>Jun 25, 2014</span> </h5>
-                        </div>
-                        <br>
-                        <div class="panel-body">
-                            <p>Just had the most wonderful experience at Ku-de-TA</p> 
-                            <a class="panel-google-plus-image" href="details.jsp">
-                                <img src="AdminDashboard/img/loginDating.jpg" />
-                            </a>
-                        </div>
-                        <div class="panel-footer">
-                            <button type="button" class="[ btn btn-default ]">+1</button>
-                            <button type="button" class="[ btn btn-default ]">
-                                <i class="glyphicon glyphicon-share-alt"></i>
-                            </button>
-                            <div class="input-placeholder">Add a comment...</div>
-                        </div>
-                        <div class="panel-google-plus-comment">
-                            <img class="img-circle" src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s46" alt="User Image" />
-                            <div class="panel-google-plus-textarea">
-                                <textarea rows="4"></textarea>
-                                <button type="submit" class="[ btn btn-success disabled ]">Post comment</button>
-                                <button type="reset" class="[ btn btn-default ]">Cancel</button>
+                        <div class="newsfeed-panel-user">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle" alt="User Image" />
                             </div>
-                            <div class="clearfix"></div>
+                            <div class="col-xs-10 col-md-11" style="padding-top:5px">
+                                <a href="#">
+                                    <span>jundat90</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span>Perfect place for a date. Do try out the Crusted Apple Pie!</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <div class="col-xs-3 col-md-4 text-center left-side">
+                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="col-xs-5 col-md-4 text-center left-side">
+                                <span>$13 per person</span>
+                            </div>
+                            <div class="col-xs-4 col-md-4 text-center right-side">
+                                <a href="details.jsp"><span>12 reviews</span></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- THIS IS DYNAMIC !-->
+                
+                </div>               
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

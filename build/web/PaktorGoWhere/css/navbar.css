@@ -26,6 +26,10 @@ and open the template in the editor.
     line-height: 25px;
 }
 
+.menu-left:hover {
+    cursor: pointer;
+}
+
 .menu-center {
     padding-top: 12px;
     padding-bottom: 10px;
@@ -46,5 +50,9 @@ and open the template in the editor.
     padding-right: 25px;
     font-size: 23px;
     line-height: 25px;
+}
+
+.menu-right:hover {
+    cursor: pointer;
 }
 

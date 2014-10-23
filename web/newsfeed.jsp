@@ -101,6 +101,42 @@
                         </div>
                     </div>
                     
+                    
+                    <div class="newsfeed-panel">
+                        <div class="newsfeed-panel-image">
+                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/place1.jpg" /></a>
+                        </div>
+                        <div class="newsfeed-panel-tags">
+                            <ul>
+                                <li>#cafe</li>
+                            </ul>
+                        </div>
+                        <div class="newsfeed-panel-user">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle" alt="User Image" />
+                            </div>
+                            <div class="col-xs-10 col-md-11" style="padding-top:5px">
+                                <a href="#">
+                                    <span>jundat90</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span>Perfect place for a date. Do try out the Crusted Apple Pie!</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <div class="col-xs-3 col-md-4 text-center left-side">
+                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="col-xs-5 col-md-4 text-center left-side">
+                                <span>$13 per person</span>
+                            </div>
+                            <div class="col-xs-4 col-md-4 text-center right-side">
+                                <a href="details.jsp"><span>12 reviews</span></a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- THIS IS DYNAMIC !-->
                 
                 </div>               
