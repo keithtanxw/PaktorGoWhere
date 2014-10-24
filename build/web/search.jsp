@@ -102,7 +102,7 @@
                                     <span class="list-text-heavy">Jundat90</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
                                 </td>
-                                <td class="td-friend text-center list-text-heavy">Unfollow<br /></td>
+                                <td id="friend1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
@@ -110,7 +110,7 @@
                                     <span class="list-text-heavy">IU</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
                                 </td>
-                                <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
+                                <td id="friend2" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
@@ -118,7 +118,7 @@
                                     <span class="list-text-heavy">BeckhamD</span><br />
                                     <span class="list-text-subtext">73 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
+                                <td id="friend3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
@@ -126,7 +126,7 @@
                                     <span class="list-text-heavy">Taeyeon</span><br />
                                     <span class="list-text-subtext">40 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
+                                <td id="friend4" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
@@ -134,7 +134,7 @@
                                     <span class="list-text-heavy">AndyLau</span><br />
                                     <span class="list-text-subtext">55 reviews</span>
                                 </td>
-                                <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
+                                <td id="friend5" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
@@ -142,7 +142,7 @@
                                     <span class="list-text-heavy">XiaoBengx</span><br />
                                     <span class="list-text-subtext">62 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
+                                <td id="friend4" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                         </table>
                     </div>
@@ -172,7 +172,7 @@
                                     <span class="list-text-heavy">Luxury Restaurants</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
                                 </td>
-                                <td id="friend1" onclick="followOrUnfollow(this.id)" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
+                                <td id="friend1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -180,7 +180,7 @@
                                     <span class="list-text-heavy">Cafes</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
                                 </td>
-                                <td id="friend2" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
+                                <td id="friend2" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -188,7 +188,7 @@
                                     <span class="list-text-heavy">Motels</span><br />
                                     <span class="list-text-subtext">73 reviews</span>
                                 </td>
-                                <td id="friend3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
+                                <td id="friend3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -196,7 +196,7 @@
                                     <span class="list-text-heavy">Hotels</span><br />
                                     <span class="list-text-subtext">40 reviews</span>
                                 </td>
-                                <td id="friend4" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
+                                <td id="friend4" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -204,7 +204,7 @@
                                     <span class="list-text-heavy">Water Sports</span><br />
                                     <span class="list-text-subtext">55 reviews</span>
                                 </td>
-                                <td id="friend5" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Follow<br /></td>
+                                <td id="friend5" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -252,17 +252,13 @@
                         var name = document.getElementById(id).className;
                         var friendStatus = document.getElementById(id);
                         
-                        if(name === "td-friend text-center"){
-                            document.getElementById(id).className = "td-follow text-center list-heavy";
-                            friendStatus = "Status";
-                            //alert(friendStatus);
-                            document.getElementById(friendStatus).innerHTML = "follow"
-                            
+                        if(name === "td-friend text-center list-text-heavy"){
+                            document.getElementById(id).className = "td-follow text-center list-text-heavy";
+                            document.getElementById(id).innerHTML = "Follow";
                             
                         }else{
-                            document.getElementById(id).className = "td-friend text-center list-heavy";
-                            friendStatus += "Status";
-                            document.getElementById(friendStatus).innerHTML = "unfollow"
+                            document.getElementById(id).className = "td-friend text-center list-text-heavy";
+                            document.getElementById(id).innerHTML = "Unfollow";
                         }
                         
                     }

@@ -141,7 +141,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Jundat90</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">12 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td class=\"td-friend text-center\"><span class=\"list-text-heavy\">Unfollow</span><br /></td>\r\n");
+      out.write("                                <td class=\"td-friend text-center list-text-heavy\">Unfollow<br /></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\" onclick=\"window.location.href='userProfile.jsp'\"><img src=\"PaktorGoWhere/img/profilepics/iu.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -211,7 +211,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Luxury Restaurants</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">12 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend1\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center\"><span class=\"list-text-heavy\">Followed</span><br/></td>\r\n");
+      out.write("                                <td id=\"friend1\" onclick=\"followOrUnfollow(this.id)\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Unfollow<br/></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -219,7 +219,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Cafes</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">32 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend2\" onclick=\"followOrUnfollow(this.id)\" class=\"td-follow text-center\"><span class=\"list-text-heavy\">Follow</span><br /></td>\r\n");
+      out.write("                                <td id=\"friend2\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Unfollow<br/></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -227,7 +227,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Motels</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">73 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend3\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center\"><span class=\"list-text-heavy\">Followed</span><br /></td>\r\n");
+      out.write("                                <td id=\"friend3\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Unfollow<br/></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -235,7 +235,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Hotels</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">40 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend4\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center\"><span class=\"list-text-heavy\">Followed</span><br /></td>\r\n");
+      out.write("                                <td id=\"friend4\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Unfollow<br/></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -243,7 +243,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Water Sports</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">55 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend5\" onclick=\"followOrUnfollow(this.id)\" class=\"td-follow text-center\"><span class=\"list-text-heavy\">Follow</span><br /></td>\r\n");
+      out.write("                                <td id=\"friend5\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Follow<br /></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                            <tr>\r\n");
       out.write("                                <td class=\"td-img\"><img src=\"PaktorGoWhere/img/places/place1.jpg\" class=\"list-table-img\" /></td>\r\n");
@@ -251,7 +251,7 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    <span class=\"list-text-heavy\">Community Centres</span><br />\r\n");
       out.write("                                    <span class=\"list-text-subtext\">62 reviews</span>\r\n");
       out.write("                                </td>\r\n");
-      out.write("                                <td id=\"friend6\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center\"><span class=\"list-text-heavy\">Followed</span><br /></td>\r\n");
+      out.write("                                <td id=\"friend6\" onclick=\"followOrUnfollow(this.id)\" class=\"td-friend text-center list-text-heavy\">Unfollow<br /></td>\r\n");
       out.write("                            </tr>\r\n");
       out.write("                        </table>\r\n");
       out.write("                    </div>\r\n");
@@ -288,8 +288,22 @@ public final class search_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    }\r\n");
       out.write("                    \r\n");
       out.write("                    function followOrUnfollow(id){\r\n");
-      out.write("                        var className = document.getElementById.(id).className;\r\n");
-      out.write("                        alert(className);\r\n");
+      out.write("                        var name = document.getElementById(id).className;\r\n");
+      out.write("                        var friendStatus = document.getElementById(id);\r\n");
+      out.write("                        \r\n");
+      out.write("                        if(name === \"td-friend text-center\"){\r\n");
+      out.write("                            document.getElementById(id).className = \"td-follow text-center list-text-heavy\";\r\n");
+      out.write("                            friendStatus = \"Status\";\r\n");
+      out.write("                            //alert(friendStatus);\r\n");
+      out.write("                            document.getElementById(friendStatus).innerHTML = \"follow\"\r\n");
+      out.write("                            \r\n");
+      out.write("                            \r\n");
+      out.write("                        }else{\r\n");
+      out.write("                            document.getElementById(id).className = \"td-friend text-center list-text-heavy\";\r\n");
+      out.write("                            friendStatus += \"Status\";\r\n");
+      out.write("                            document.getElementById(friendStatus).innerHTML = \"unfollow\"\r\n");
+      out.write("                        }\r\n");
+      out.write("                        \r\n");
       out.write("                    }\r\n");
       out.write("        </script>\r\n");
       out.write("    </body>\r\n");
