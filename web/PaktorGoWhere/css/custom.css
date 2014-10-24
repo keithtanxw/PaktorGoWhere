@@ -322,6 +322,67 @@ body{
     font-style: italic;
     font-size: 14px;
 }
+
+
+#list-table1 > thead > tr > td,
+#list-table1 > tbody > tr > td,
+#list-table1 > tfoot > tr > td {
+    padding: 9px 8px;
+}
+
+#list-table1 > thead > tr > .td-img,
+#list-table1 > tbody > tr > .td-img,
+#list-table1 > tfoot > tr > .td-img {
+    padding: 0px;
+    width: 20%;
+}
+
+#list-table1 > thead > tr > .td-follow,
+#list-table1 > tbody > tr > .td-follow,
+#list-table1 > tfoot > tr > .td-follow {
+    padding: 25px 8px 15px;
+    width: 30%;
+    background-color: #D8D8DC;
+    color: #999;
+    border-bottom: 3px solid #BBBBBE;
+    border-right: 4px solid #BBBBBE;
+}
+
+#list-table1 > thead > tr > .td-follow:hover,
+#list-table1 > tbody > tr > .td-follow:hover,
+#list-table1 > tfoot > tr > .td-follow:hover {
+    background-color: #3EDCDC;
+    color: #fff;
+    border-bottom: 3px solid #3CD0D0;
+    border-right: 4px solid #3CD0D0;
+    cursor: pointer;
+}
+
+#list-table1 > thead > tr > .td-friend,
+#list-table1 > tbody > tr > .td-friend,
+#list-table1 > tfoot > tr > .td-friend {
+    padding: 25px 8px 15px;
+    width: 30%;
+    background-color: #41D696;
+    color: #f5f5f5;
+    border-bottom: 3px solid #3EC98D;
+    border-right: 4px solid #3EC98D;
+}
+
+#list-table1 > thead > tr > .td-friend:hover,
+#list-table1 > tbody > tr > .td-friend:hover,
+#list-table1 > tfoot > tr > .td-friend:hover {
+    background-color: #4AEAA5;
+    color: #fff;
+    border-bottom: 3px solid #47DB9B;
+    border-right: 4px solid #47DB9B;
+    cursor: pointer;
+}
+
+#list-table1 > tbody + tbody {
+    border-top: 4px solid #ddd;
+}
+
 /*=============================================================
     LISTS
 =============================================================*/

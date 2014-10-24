@@ -155,7 +155,7 @@
                 <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
                     <form role="form">
                         <!-- TODO: This input has to be dynamic !-->
-                        <input type="text" class="form-control" id="searchTextbox" placeholder="Enter name of place">
+                        <input type="text" class="form-control" id="searchTextbox1" placeholder="Enter name of place">
                     </form>
                 </div>
             </div><br />
@@ -165,7 +165,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1" id="findPlacesInfo">
                     <div class="panel panel-default">
-                        <table class="table table-hover" id="list-table">
+                        <table class="table table-hover" id="list-table1">
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
                                 <td>
@@ -224,8 +224,8 @@
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
         <!-- Search Box's Javascript !-->
-        <script src="PaktorGoWhere/js/plugins/searchbox.js" type="text/javascript"></script>
-
+        <script src="PaktorGoWhere/js/plugins/searchbox0.js" type="text/javascript"></script>
+        <script src="PaktorGoWhere/js/plugins/searchbox1.js" type="text/javascript"></script>
 
         <script>
                     function settingsForToggleTab() {
