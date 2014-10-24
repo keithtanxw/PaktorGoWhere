@@ -139,60 +139,76 @@
                 <!-- CONTENTS HERE !-->
                 <div class="container-fluid">
                     <div class="row">
-                        <table class="table table-responsive" style="background-color: white">
-                            <tr>
-                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                                <td>
-                                    <strong>La Strada</strong><br/>
-                                    Place Tags<br />
-                                    Tags
-                                </td>
-                                <td class="text-right">
-                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                    <strong>200m</strong>&nbsp;away
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                                <td>
-                                    <strong>La Strada</strong><br/>
-                                    Place Tags<br />
-                                    Tags
-                                </td>
-                                <td class="text-right">
-                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                    <strong>200m</strong>&nbsp;away
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                                <td>
-                                    <strong>La Strada</strong><br/>
-                                    Place Tags<br />
-                                    Tags
-                                </td>
-                                <td class="text-right">
-                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                    <strong>200m</strong>&nbsp;away
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="PaktorGoWhere/img/places/place1.jpg" style="height: 15%; width: 70%;"/></td>
-                                <td>
-                                    <strong>La Strada</strong><br/>
-                                    Place Tags<br />
-                                    Tags
-                                </td>
-                                <td class="text-right">
-                                    <h4>4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></h4>
-                                    <strong>200m</strong>&nbsp;away
-                                </td>
-                            </tr>
-                        </table>
-                        
+                        <div class="col-xs-12 col-md-10 col-md-offset-1" id="findPlacesInfo">
+                            <div class="panel panel-default">
+                                <table class="table table-hover" id="list-table">
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Food For Thought</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                        <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ku De Ta</span><br />
+                                            <span class="label label-success"><i>Fine Dining</i></span>&nbsp;<span class="label label-primary"><i>Luxury</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Waffles Frenzy</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ice Cream Chef</span><br />
+                                            <span class="label label-success"><i>Icecream</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                        <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Dark Corner #4</span><br />
+                                            <span class="label label-success"><i>Sexy</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
                         <!--Scroll to the top-->
                         <div class="col-xs-offset-10 col-xs-2">
-                        <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                            <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
                         </div>
                     </div>
                 </div>
