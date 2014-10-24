@@ -62,8 +62,8 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">surprise me</a></div>
+                <div class="col-xs-3 menu-left" onclick="window.location.href='goPaktor.jsp'"><i class="fa fa-chevron-left"></i></div>
+                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Paktor Now</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
