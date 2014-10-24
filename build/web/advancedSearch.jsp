@@ -173,6 +173,36 @@
                                        <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
                                     <strong>200m</strong>&nbsp;away</span><br /></td>
                                     </tr>
+                                     <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                     <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
+                                     <tr>
+                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                        <td>
+                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
+                                            <span class="label label-success"><i>Cafes</i></span><br>
+                                            <span class="list-text-subtext">Doby Ghaut</span>
+                                        </td>
+                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
+                                    <strong>200m</strong>&nbsp;away</span><br /></td>
+                                    </tr>
                                     <tr>
                                         <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
                                         <td>
