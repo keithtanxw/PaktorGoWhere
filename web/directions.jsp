@@ -171,7 +171,7 @@
             <!-- Navigation Bar !-->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
                 <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'details.jsp'" class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="index.html">PAKTORGoWHERE</a></div>
+                <div class="col-xs-6 menu-center text-center"><a href="#">directions</a></div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars"></i></div>
             </nav>
         </div>
