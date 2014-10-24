@@ -50,7 +50,6 @@
                         <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
                         <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>                        
                         <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
-                        <li><a href="#"><i class="fa fa-gear"></i>&nbsp;&nbsp;Settings</a></li>
                         <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
                 </div>                
@@ -167,7 +166,7 @@
                     <div class="panel panel-default">
                         <table class="table table-hover" id="list-table1">
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1-sq.jpg" class="list-table-img" /></td>
                                 <td>
                                     <span class="list-text-heavy">Luxury Restaurants</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
@@ -175,7 +174,7 @@
                                 <td id="place1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
+                                <td class="td-img"><img src="PaktorGoWhere/img/places/place1-sq.jpg" class="list-table-img" /></td>
                                 <td>
                                     <span class="list-text-heavy">Cafes</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
