@@ -25,28 +25,23 @@
         <style>
 
             html, body, #map-canvas {
-                height: 300px;
+                height: 350px;
                 margin: 0px;
                 padding: 0px
             }
-            #panel {
-                position: absolute;
-                top: 150px;
-                left: 50%;
-                margin-left: -50%;
-                z-index: 5;
-                background-color: #fff;
-                padding: 5px;
-                border: 1px solid #999;
-            }
+            
         </style>
 
 
         <style>
             #directions-panel {
-                height: 100%;
-                width: 390px;
-                overflow: auto;
+                padding: 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                border: 2px solid transparent;
+                border-radius: 0px;
+                -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
             }
 
             @media print {
@@ -56,8 +51,14 @@
                 }
 
                 #directions-panel {
-                    float: none;
-                    width: auto;
+                    padding: 15px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: 2px solid transparent;
+                    border-radius: 0px;
+                    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+                    
                 }
             }
         </style>
@@ -177,12 +178,6 @@
         <!-- SideNav Here !-->
 
         <!-- Content !-->
-        <section class="container-fluid header-content">
-            <div class="col-xs-12 text-center header-text">
-                <!-- TODO: DYNAMIC HEADER !-->
-                <span class="header-1">DIRECTIONS</span>
-            </div>
-        </section>
         <div class="container-fluid main-content">
             <div class="row text-center" style="height:200px">
                 <div id="map-canvas"></div>
@@ -199,70 +194,10 @@
                     </div>
                 </div>   
             </div><br/>
-
-
-
-
             <div class="row">
-                <div class="col-xs-12 direction-div">
-                    <div class="directions-head-section">
-                        <p class="directions-header">Drive 0.82km, 6 min</p>
-                        <div id="directions-panel"></div>
-                    </div>                    
-                    <div class="col-xs-12 start">
-                        <h4><i class="fa fa-circle-o"></i>&nbsp;&nbsp;Current Location</h4>
-                    </div>
-                    <div class="col-xs-12 directions-span">
-                        <div class="col-xs-1">
-                            <i class="fa fa-angle-double-down"></i>
-                        </div>
-                        <div class="col-xs-8">
-                            Travel along Victoria Street
-                        </div>
-                        <div class="col-xs-3 text-right">
-                            400m
-                        </div>
-                    </div>
-                    <div class="col-xs-12 directions-span">
-                        <div class="col-xs-1">
-                            <i class="fa fa-arrow-left"></i>
-                        </div>
-                        <div class="col-xs-8">
-                            Turn left at Queens Street
-                        </div>
-                        <div class="col-xs-3 text-right">
-                            170m
-                        </div>
-                    </div>
-                    <div class="col-xs-12 directions-span">
-                        <div class="col-xs-1">
-                            <i class="fa fa-arrow-right"></i>
-                        </div>
-                        <div class="col-xs-8">
-                            Turn right at Middle Road
-                        </div>
-                        <div class="col-xs-3 text-right">
-                            150m
-                        </div>
-                    </div>
-                    <div class="col-xs-12 directions-span">
-                        <div class="col-xs-1">
-                            <i class="fa fa-angle-double-down"></i>
-                        </div>
-                        <div class="col-xs-8">
-                            Proceed along Middle Road
-                            <br />
-                            <span class="directions-landmark">
-                                <i class="fa fa-info-circle directions-landmark-icon"></i>&nbsp;&nbsp;Destination on the left
-                            </span>
-                        </div>
-                        <div class="col-xs-3 text-right">
-                            100m
-                        </div>
-                    </div>
-                    <div class="col-xs-12 end">
-                        <h4><i class="fa fa-circle"></i>&nbsp;&nbsp;Destination</h4>
-                    </div>
+                <div class="col-xs-12 direction-div text-center">
+                    <span class="directions-header">Select a route to take</span>
+                    <div id="directions-panel"></div>
                 </div>       
             </div>
         </div>
