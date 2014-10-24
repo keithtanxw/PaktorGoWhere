@@ -172,7 +172,7 @@
                                     <span class="list-text-heavy">Luxury Restaurants</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
                                 </td>
-                                <td id="friend1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
+                                <td id="place1" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -180,7 +180,7 @@
                                     <span class="list-text-heavy">Cafes</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
                                 </td>
-                                <td id="friend2" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
+                                <td id="place2" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -188,7 +188,7 @@
                                     <span class="list-text-heavy">Motels</span><br />
                                     <span class="list-text-subtext">73 reviews</span>
                                 </td>
-                                <td id="friend3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
+                                <td id="place3" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -196,7 +196,7 @@
                                     <span class="list-text-heavy">Hotels</span><br />
                                     <span class="list-text-subtext">40 reviews</span>
                                 </td>
-                                <td id="friend4" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
+                                <td id="place4" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -204,7 +204,7 @@
                                     <span class="list-text-heavy">Water Sports</span><br />
                                     <span class="list-text-subtext">55 reviews</span>
                                 </td>
-                                <td id="friend5" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
+                                <td id="place5" onclick="followOrUnfollow(this.id)" class="td-follow text-center list-text-heavy">Follow<br /></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -212,7 +212,7 @@
                                     <span class="list-text-heavy">Community Centres</span><br />
                                     <span class="list-text-subtext">62 reviews</span>
                                 </td>
-                                <td id="friend6" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
+                                <td id="place6" onclick="followOrUnfollow(this.id)" class="td-friend text-center list-text-heavy">Unfollow<br /></td>
                             </tr>
                         </table>
                     </div>
