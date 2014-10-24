@@ -10,6 +10,8 @@ $(function() {
     $("#menu-toggle").click(function(e) {
         e.stopPropagation();
         $("#sidebar-wrapper").toggleClass("active");
+        $('body').append('<div class="overlay"></div>');
+        $(".overlay").show();
         status = true;
     });
 
@@ -17,12 +19,14 @@ $(function() {
         click: function() {
             if (status) {
                 $("#sidebar-wrapper").toggleClass("active");
+                $(".overlay").remove();
                 status = false;
             }
         },
         keypress: function() {
             if (status) {
                 $("#sidebar-wrapper").toggleClass("active");
+                $(".overlay").remove();
                 status = false;
             }
         }

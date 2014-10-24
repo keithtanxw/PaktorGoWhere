@@ -20,6 +20,20 @@ body{
     background: #E7E7EE;
 }
 
+/* For a black bg when sidenav opens */
+.overlay {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity = 50); /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
 .header-content {
     padding-top: 60px;
     padding-bottom: 13px;
@@ -142,8 +156,11 @@ body{
 /*=============================================================
    END NEWSFEED
 ==============================================================*/
+/*=============================================================
+  PROFILE 
+=============================================================*/
 .profile-header {
-    height: 350px;
+    height: 180px;
     padding-top: 70px;
     background-color: transparent;
     color: #fff;
@@ -158,18 +175,27 @@ body{
     background-size: cover;
 }
 
-.profile-text {
+.profile-pic-section {
+    width: 30%;
+    float: left;
+}
+
+.profile-name-section {
+    padding: 30px 20px 20px;
+    width: 70%;
+    float: left;
+}
+
+.profile-name-text {
+    font-size: 2em;;
+    font-weight: 700;
+}
+
+.profile-nickname-text {
     color: #fff;
-    
-    font-family: 'Lobster Two', cursive;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     font-style: italic;
-    line-height: 1.8em;    
-    letter-spacing: 0.3em;
-        
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    letter-spacing: 0.2em;
 }
 
 .profile-content {
@@ -198,10 +224,14 @@ body{
 }
 
 .userPic-medium {
-    width: 150px;
+    margin-top: 20px;
+    width: 120px;
     height: auto;
 }
 
+/*=============================================================
+   END PROFILE
+=============================================================*/
 /*=============================================================
    PAKTOR NOW
 =============================================================*/
@@ -555,6 +585,10 @@ body{
 /*=============================================================
     FONT SIZES
 =============================================================*/
+.heading-20 {
+    font-size: 2em;
+}
+
 .heading-14 {
     font-size: 1.4em;
 }
@@ -565,6 +599,10 @@ body{
 
 .heading-10 {
     font-size: 1em;
+}
+
+.heading-09 {
+    font-size: 0.9em;
 }
 
 .heading-08 {

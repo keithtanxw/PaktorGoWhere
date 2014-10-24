@@ -15,32 +15,22 @@ and open the template in the editor.
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     text-transform: lowercase;
-    letter-spacing: 0.2em;
-    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+    z-index: 99;
 }
 
 .menu-left {
     padding-top: 13px;
     padding-bottom: 15px;
     padding-left: 25px;
-    font-size: 20px;
-    line-height: 25px;
 }
 
 .menu-left:hover {
     cursor: pointer;
 }
 
-.menu-center {
-    padding-top: 12px;
-    padding-bottom: 10px;
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 25px;
-    color: #f5f5f5;
-}
-
-.menu-center a {
+.menu-left a {
     color: #fff;
     text-decoration: none;
 }
@@ -49,11 +39,15 @@ and open the template in the editor.
     padding-top: 12px;
     padding-bottom: 15px;
     padding-right: 25px;
-    font-size: 1.6em;
-    line-height: 25px;
+    
 }
 
 .menu-right:hover {
     cursor: pointer;
+}
+
+.menu-right a {
+    font-size: 1.6em;
+    line-height: 2em;
 }
 
