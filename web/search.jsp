@@ -97,52 +97,52 @@
                     <div class="panel panel-default">
                         <table class="table table-hover" id="list-table">
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/jundat.jpg"  class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">Jundat90</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">IU</span><br />
                                     <span class="list-text-subtext">32 reviews</span>
                                 </td>
                                 <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">BeckhamD</span><br />
                                     <span class="list-text-subtext">73 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">Taeyeon</span><br />
                                     <span class="list-text-subtext">40 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">AndyLau</span><br />
                                     <span class="list-text-subtext">55 reviews</span>
                                 </td>
                                 <td class="td-follow text-center"><span class="list-text-heavy">Follow</span><br /></td>
                             </tr>
                             <tr>
-                                <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
-                                <td>
+                                <td class="td-img" onclick="window.location.href='userProfile.jsp'"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
+                                <td onclick="window.location.href='userProfile.jsp'">
                                     <span class="list-text-heavy">XiaoBengx</span><br />
                                     <span class="list-text-subtext">62 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Unfollow</span><br /></td>
                             </tr>
                         </table>
                     </div>
@@ -172,7 +172,7 @@
                                     <span class="list-text-heavy">Luxury Restaurants</span><br />
                                     <span class="list-text-subtext">12 reviews</span>
                                 </td>
-                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br /></td>
+                                <td class="td-friend text-center"><span class="list-text-heavy">Followed</span><br/></td>
                             </tr>
                             <tr>
                                 <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
@@ -246,6 +246,10 @@
                             $("#findPlacesBar").show();
                             $("#findPlacesInfo").show();
                         }
+                    }
+                    
+                    function followOrUnfollow(){
+                        
                     }
         </script>
     </body>
