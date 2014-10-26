@@ -81,9 +81,7 @@
                 List Section
             !------------------------------------------->      
             <!-- CONTENTS HERE !-->
-            <div class="row newsfeed-section">
-                              
-            </div>                   
+                             
                
 
             <!--Scroll to the top-->

@@ -62,8 +62,9 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left" onclick="window.location.href='goPaktor.jsp'"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Paktor Now</a></div>
+                <div class="col-xs-9 menu-left" onclick="window.location.href='goPaktor.jsp'">
+                    <i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Paktor Now
+                </div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -94,156 +95,94 @@
         !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
             <div class="row paktor-now-section">
-                <div class="panel" style="min-height: 50px">
-                    <div class="panel-heading">
-                        <div class="col-xs-6 text-left">
-                            <i class="fa fa-filter"></i>&nbsp;&nbsp;Filters
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <button id="filterToggle" class="btn btn-primary" data-widget="collapse"><i id="directionIcon" class="fa fa-angle-double-up"></i></button>
-                        </div>  
+                <!-- FILTER HERE !-->
+                <div class="advanced-search">
+                    <div class="header">
+                        <div style="width:50%;float:left">
+                            <span><i class="fa fa-filter"></i>&nbsp;&nbsp;Filters</span>
+                        </div> 
+                        <div style="width:50%;float:left;" class="text-right">
+                            <a id="filterToggle" class="heading-14" style="text-decoration:none">
+                                <i id="directionIcon" class="fa fa-caret-up"></i>
+                            </a>
+                        </div> 
                     </div>
-                    <div id="selectFilters" class="panel-body" >
+                    <div class="filter-section" id="selectFilters">
                         <form role="form">
-                            <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="placeInput">Location</label>
-                                    <input type="text" class="form-control" id="placeInput" placeholder="Enter location">
-                                </div>     
-                                <div class="form-group">
-                                    <label for="sortby">Sort By</label>
-                                    <select class="form-control" id="sortby">
-                                        <option selected>Distance</option>
-                                        <option>Price</option>
-                                        <option>Ambience</option>
-                                    </select>
-                                </div>    
+                            
+                            <div class="form-group">
+                                <label for="placeInput" class="heading-09">Location</label>
+                                <input type="text" class="form-control" id="placeInput" placeholder="Enter location">
+                            </div>                            
+                            <div class="form-group">
+                                <label for="sortby" class="heading-09">Place Type</label>
+                                <select class="form-control" id="sortby">
+                                    <option>Restaurants</option>
+                                    <option>Cafes</option>                                        
+                                    <option>Strolling/Walking</option>
+                                    <option>Outdoors</option>
+                                    <option>Concerts</option>
+                                    <option>Festivals</option>
+                                    <option>Dark Corners</option>
+                                </select>
                             </div>
-                            <div class="col-xs-6">
-                                <div class="form-group">
-                                    <label for="sortby">Activity</label>
-                                    <select class="form-control" id="sortby">
-                                        <option>Eating</option>
-                                        <option>Some Activity</option>
-                                        <option>Leisure Walks</option>
-                                        <option>Shopping</option>
-                                        <option>Dark Corners</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="range_5">Select sort range</label>
-                                    <input id="range_5" type="text" name="range_5" value="" />
-                                </div>
+                            <div class="form-group">
+                                <label for="sortby" class="heading-09">Sort By</label>
+                                <select class="form-control" id="sortby">
+                                    <option selected>Distance</option>                                      
+                                    <option>Price per person</option>
+                                    <option>Rating</option>
+                                </select>
                             </div>
-                    </div>                            
-                </div>
-                <!-- CONTENTS HERE !-->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1" id="findPlacesInfo">
-                            <div class="panel panel-default">
-                                <table class="table table-hover" id="list-table">
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Food For Thought</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Dhoby Ghaut</span>
-                                        </td>
-                                        <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ku De Ta</span><br />
-                                            <span class="label label-success"><i>Fine Dining</i></span>&nbsp;<span class="label label-primary"><i>Luxury</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                     <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                     <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                     <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ichiban Sushi</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Waffles Frenzy</span><br />
-                                            <span class="label label-success"><i>Cafes</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Ice Cream Chef</span><br />
-                                            <span class="label label-success"><i>Icecream</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                        <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="td-img"><img src="PaktorGoWhere/img/places/place1.jpg" class="list-table-img" /></td>
-                                        <td>
-                                            <span class="list-text-heavy">Dark Corner #4</span><br />
-                                            <span class="label label-success"><i>Sexy</i></span><br>
-                                            <span class="list-text-subtext">Doby Ghaut</span>
-                                        </td>
-                                       <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i>
-                                    <strong>200m</strong>&nbsp;away</span><br /></td>
-                                    </tr>
-                                </table>
+                            <div class="form-group">
+                                <label for="range_5" class="heading-09">Select sort range</label>
+                                <input id="range_5" type="text" name="range_5" value="" />
                             </div>
-                        </div>
-
-                        <!--Scroll to the top-->
-                        <div class="col-xs-offset-10 col-xs-2">
-                            <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-                        </div>
+                        </form>
                     </div>
+                </div>
+
+                <!-- CONTENTS HERE !-->
+                <div class="row">
+                    <!-- Entry Listing !-->
+                    <!-- TODO: Loop this !-->
+                    <div class="list-display">
+                        <div class="list-display-body">
+                            <div class="list-display-thumbnail">
+                                <img src="PaktorGoWhere/img/places/cafe1-sq.jpg" alt=""/>
+                            </div>
+                            <div class="list-display-place">
+                                <span class="heading-09"><strong>Name of Place</strong></span><br/>
+                                <span class="label label-primary">#restaurants</span>
+                                <span class="label label-primary">#fine-dining</span><br/>
+                                <span class="heading-08">12 Address Here</span>
+                            </div>
+                             <div class="list-display-distance text-right">
+                                 <span class="heading-10"><strong>2km</strong></span><br/>
+                                 <span class="heading-09"><strong>4&nbsp;&nbsp;<i class="fa fa-heart"></i></strong></span><br/>
+                                 <span class="heading-09"><strong>$12&nbsp;&nbsp;<i class="fa fa-user"></i></strong></span>
+                            </div>
+                        </div>
+                        <div class="list-display-description">
+                            <span class="heading-09">Description of place here...</span><br/>
+                        </div>
+                        <div class="list-display-footer">
+                            <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmark This</button>&nbsp;&nbsp;
+                            <button class="btn btn-primary">See More</button>
+                        </div>                     
+                    </div>
+                </div>
+                
+                
+                <!--Scroll to the top-->
+                <div class="col-xs-offset-10 col-xs-2">
+                    <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
                 </div>
             </div>
+        </div>    
+            
+            <!-- ========= Javascript ============= !-->
+            
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
             <script src="//code.jquery.com/jquery-1.10.2.js"></script>
             <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -271,14 +210,14 @@
 
                 var status = 1;
                 $("#filterToggle").click(function() {
-                    $("#selectFilters").slideToggle("slow");
+                    $("#selectFilters").slideToggle("normal");
 
                     //change the arrow direction
                     if (status === 1) {
-                        document.getElementById("directionIcon").className = "fa fa-angle-double-down";
+                        document.getElementById("directionIcon").className = "fa fa-caret-down";
                         status = 2;
                     } else if (status === 2) {
-                        document.getElementById("directionIcon").className = "fa fa-angle-double-up";
+                        document.getElementById("directionIcon").className = "fa fa-caret-up";
                         status = 1;
                     }
                 });
