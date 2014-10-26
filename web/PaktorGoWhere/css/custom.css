@@ -14,7 +14,7 @@ body{
     overflow-x: hidden!important;
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: 500;
     min-height: 100%;
     background: #E7E7EE;
@@ -78,13 +78,13 @@ body{
 }
 .heading {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
 .subheading {
     color: #888;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 0.9em;
     font-style: italic;
 }
 
@@ -163,10 +163,10 @@ body{
     
     font-family: 'Lobster Two', cursive;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5em;
     font-style: italic;
-    line-height: 40px;    
-    letter-spacing: 3px;
+    line-height: 1.8em;    
+    letter-spacing: 0.3em;
         
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -259,16 +259,16 @@ body{
 }
 
 .go-paktor-content {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .go-paktor-text {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 4em;
+    line-height: 4em;
     color: #fff;
 }
 
@@ -332,11 +332,6 @@ body{
     padding-bottom: 15px;
 }
 
-.directions-header {
-    font-size: 24px;
-    line-height: 30px;
-}
-
 .directions-landmark {
     font-size: 13px;
     color: #999;
@@ -368,8 +363,8 @@ body{
 
 .menu-tab .menu-tab-text {
     font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 .white-tab {
@@ -485,13 +480,13 @@ body{
 
 .list-text-heavy {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1em;
 }
 
 .list-text-subtext {
     color: #999;
     font-style: italic;
-    font-size: 14px;
+    font-size: 0.8em;
 }
 
 
@@ -557,3 +552,33 @@ body{
 /*=============================================================
     LISTS
 =============================================================*/
+/*=============================================================
+    FONT SIZES
+=============================================================*/
+.heading-14 {
+    font-size: 1.4em;
+}
+
+.heading-12 {
+    font-size: 1.2em;
+}
+
+.heading-10 {
+    font-size: 1em;
+}
+
+.heading-08 {
+    font-size: 0.8em;
+}
+
+.heading-07 {
+    font-size: 0.7em;
+}
+
+.heavy-600 {
+    font-weight: 600;
+}
+
+.heavy-700 {
+    font-weight: 700;
+}

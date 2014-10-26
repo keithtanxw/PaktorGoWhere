@@ -81,11 +81,16 @@
                 </div>
             </div>
         </div>    
-        <div class="container-fluid main-content">
+        <div class="container-fluid" style="padding-top: 20px">
             <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 text-center profile-content">
+                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-center profile-content">
                     <p>I think food is an art, culture and part of our lives</p>
-                    <br />
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-center profile-content">
+                    <span><i class="fa fa-user"></i>&nbsp;&nbsp;12</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <span><i class="fa fa-comment"></i>&nbsp;&nbsp;13</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <span><i class="fa fa-heart"></i>&nbsp;&nbsp;8</span>
+                    <br /><br />
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 text-center" id="ownProfile">
                     <button class="btn btn-lg btn-primary">Edit Profile</button>
