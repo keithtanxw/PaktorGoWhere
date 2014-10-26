@@ -29,8 +29,7 @@
         !------------------------------------------------------------------------------------>
         <div class="container-fluid">            
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="index.html">Search</a></div>
+                <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Search</div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>

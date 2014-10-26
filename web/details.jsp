@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
+        <!-- Newsfeed Panel !-->
+        <link rel="stylesheet" href="PaktorGoWhere/css/newsfeedPanel.css">
 
     </head>
     <body>
@@ -31,8 +33,7 @@
         !------------------------------------------------------------------------------------>
         <div class="container-fluid">            
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="index.html">Search</a></div>
+                <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Details</div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -75,134 +76,119 @@
                 </div>
                 <div class="menu-tab turqoise-tab" id="findPlaces" onclick="window.location.href = 'bookmarks.jsp'">
                     <div class="col-xs-12 text-center">
-                        <span class="menu-tab-text"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmarks</span>
+                        <span class="menu-tab-text"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmark This</span>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <ul class="list-group">
-                    <li class="list-group-item text-center"><p class="heading" style='padding-top:10px'>Shabestan Persian</p></li>
-                    <li class="list-group-item"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<b>Opening Hours: </b><small>&nbsp;&nbsp;10AM - 10PM</small></li>
-                    <li class="list-group-item"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<b>Address Here: </b><small>12 Bras Basah Road, Singapore 123456</small></li>
-                    <li class="list-group-item"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;<b>Phone Number Here: </b><small>(65) 6269 3411</small></li>
-                    <li class="list-group-item"><i class="fa fa-laptop"></i>&nbsp;&nbsp;<b>Website Here: </b><small> http://www.shabestan.com.sg</small></li>
+                    <li class="list-group-item text-center">
+                        <span class="heading-14" style='padding-top:10px'>Shabestan Persian</span><br/>
+                        <span class="label label-primary">#restaurant</span>
+                        <span class="label label-primary">#fine-dining</span>
+                    </li>                    
+                </ul>
+                <ul class="list-group">
                     <li class="list-group-item">
-                        <i class="fa fa-book"></i>&nbsp;&nbsp;<b>Description: </b><small>Beautiful Persian styled restaurant serving Mediterranean cuisines from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss. </small>
+                        <span class="heading-09">
+                            <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address: </strong>&nbsp;&nbsp;12 Bras Basah Road, Singapore 123456
+                        </span>
                     </li>
-                </ul>                
-            </div><!-- close top row !-->
-            <div class="row">
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-building"></i>&nbsp;&nbsp;<strong>Distance from current location: </strong>&nbsp;&nbsp;2km
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
+                        </span>
+                    </li>    
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-laptop"></i>&nbsp;&nbsp;<strong>Website: </strong>&nbsp;&nbsp;http://www.shabestan.com.sg
+                        </span>                      
+                    </li>
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<strong>Opening Hours: </strong>&nbsp;&nbsp;10am - 10pm
+                        </span>
+                    </li> 
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-users"></i>&nbsp;&nbsp;<strong>Peak Periods: </strong>&nbsp;&nbsp;Weekends 6pm - 8.30pm
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-user"></i>&nbsp;&nbsp;<strong>Price per person: </strong>&nbsp;&nbsp;SGD 23
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="heading-09">
+                            <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Description: </strong><br/>Beautiful Persian styled restaurant serving Mediterranean cuisine from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss.
+                        </span>
+                    </li>
+                </ul>
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <p><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;<b>Ratings</b></p>
-                        <div class="col-xs-4" style="padding-left: 0px">
-                            <b>Price</b>
+                        <span class="heading-09"><i class="fa fa-heart"></i>&nbsp;&nbsp;<strong>Ratings: </strong></span><br/><br/>
+                        <div class="col-xs-6 text-right">
+                            <span class="heading-09">Ambience</span>                                              
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-6 pink-color">
+
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart-o"></i>
+
                         </div>
-                        <div class="col-xs-4" style="padding-left: 0px">
-                            <b>Ambience</b>
+                        <div class="col-xs-6 text-right">
+                            <span class="heading-09">Value For Money</span>                                              
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-6 pink-color">
+
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart"></i>
                             <i class="fa fa-heart-o"></i>
+
                         </div>
-                        <div class="col-xs-4" style="padding-left: 0px">
-                            <b>Service</b>
-                        </div>
-                        <div class="col-xs-8">
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart-o"></i>
-                        </div>
+                    
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <div class="row">
-                        <div class="menu-tab turqoise-tab">
-                            <div class="col-xs-12 text-center">
-                                <span class="menu-tab-text"><i class="fa fa-group"></i>&nbsp;&nbsp;All Comments</span>
+            </div><!-- close top row !-->
+            
+            <!-- Comments Section !-->
+            <!-- TODO: Loop here !-->
+            <div class="row newsfeed-section">
+                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                    <div class="newsfeed-panel">
+                        <div class="newsfeed-panel-user">
+                            <div class="img-section">
+                                <img src="PaktorGoWhere/img/profilepics/iu.jpg" class="img-circle" alt="User Image" />
+                            </div>
+                            <div class="img-side-section">
+                                <a href="#">
+                                    <span>IU</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="menu-tab turqoise-tab">
-                            <div class="col-xs-12 text-center">
-                                <span class="menu-tab-text"><i class="fa fa-heart"></i>&nbsp;&nbsp;Following</span>
-                            </div>
+                        <div class="newsfeed-panel-comments">
+                            <span class="heading-09">Make sure to come here for a good stroll with your loved one</span>
                         </div>
-
-                        <div class="panel panel-default">
-                            <table class="table table-hover" id="list-table">
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">IU</span><br />
-                                        <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="heading-10 heavy-700">4.2/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span></td>
-
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">AndyLau</span><br />
-                                        <span class="list-text-subtext">Cantonese <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">BeckhamD</span><br />
-                                        <span class="list-text-subtext">Football in the zoo rocks <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">3.5/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">Jundat90</span><br />
-                                        <span class="list-text-subtext">This is the best place in the world <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.0/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">Taeyeon</span><br />
-                                        <span class="list-text-subtext">kimchi rock <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.7/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
-                                    <td>
-                                        <span class="list-text-heavy">XiaoBengx</span><br />
-                                        <span class="list-text-subtext">Woohoo <a href="#">See more..</a></span>
-                                    </td>
-                                    <td class="td-friend text-center"><span class="list-text-heavy">4.1/5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-                                </tr>
-
-                            </table>
+                        <div class="newsfeed-panel-footer">
+                            <span>Ambience :&nbsp;&nbsp;4.5&nbsp;<i class="fa fa-heart"></i></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <span>Value for money :&nbsp;&nbsp;4&nbsp;<i class="fa fa-heart"></i></span>                                             
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
+            
             
             <div class='row text-center' style='padding-bottom: 30px'>
                 <button class='btn btn-lg btn-primary'>Add comment</button>
