@@ -66,14 +66,13 @@
             <!-- Profile Image Section !-->
             <div class="container-fluid profile-header">
                 <div class="row-fluid">
-                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
                         <div class="profile-pic-section">
-                            <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-thumbnail userPic-medium">
-                        </div>
-                        <div class="profile-name-section">
-                             <span class="profile-name-text">jundat90</span><br/>
-                             <span class="profile-nickname-text">Ultimate Foodie</span>
-                        </div>
+                            <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle userPic-medium"><br/><br/>
+                        </div>    
+                        <span class="profile-name-text">jundat90</span><br/>
+                        <span class="profile-nickname-text">Ultimate Foodie</span>
+                       
                     </div>
                 </div>
             </div>

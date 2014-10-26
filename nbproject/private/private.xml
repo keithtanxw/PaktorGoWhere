@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/newsfeed.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/directions.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/search.jsp</file>
@@ -11,6 +12,16 @@
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/surpriseMe.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/details.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/advancedSearch.jsp</file>
+=======
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/PaktorGoWhere/css/bootstrap.css</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/newsfeed.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/bookmarks.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/details.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/PaktorGoWhere/css/custom.css</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/goPaktor.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/PaktorGoWhere/css/newsfeedPanel.css</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/search.jsp</file>
+>>>>>>> bf372215bb5665ba9d4d4ef8422e762060884c37
         </group>
     </open-files>
 </project-private>
