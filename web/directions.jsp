@@ -21,22 +21,15 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
-
         <style>
-
-            html, body, #map-canvas {
+            #map-canvas {
                 height: 350px;
                 margin: 0px;
                 padding: 0px
             }
             
-        </style>
-
-
-        <style>
             #directions-panel {
-                padding: 15px;
-                margin-top: 5px;
+                padding: 5px 15px;
                 margin-bottom: 5px;
                 border: 2px solid transparent;
                 border-radius: 0px;
@@ -46,13 +39,11 @@
 
             @media print {
                 #map-canvas {
-                    height: 500px;
-                    margin: 0;
+                    height: 350px;
                 }
 
                 #directions-panel {
-                    padding: 15px;
-                    margin-top: 5px;
+                    padding: 5px 15px;
                     margin-bottom: 5px;
                     border: 2px solid transparent;
                     border-radius: 0px;
@@ -111,6 +102,7 @@
                 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
                 directionsDisplay.setMap(map);
                 directionsDisplay.setPanel(document.getElementById('directions-panel'));
+        
             }
 
 
@@ -172,8 +164,7 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left"><i onclick="window.location.href = 'details.jsp'" class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="#">directions</a></div>
+                <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left" onclick="window.location.href = 'details.jsp'"></i>&nbsp;&nbsp;Directions</div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -191,7 +182,7 @@
                         <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
                         <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
                         <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>                        
+                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Find Users</a></li>                        
                         <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
                         <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
@@ -202,31 +193,33 @@
             Content Section 
         !------------------------------------------------------------------------------------>
         <div class="container-fluid main-content">
-            <div class="row text-center" style="height:200px">
-                <div id="map-canvas"></div>
-                
+            <div class="row text-center">
+                <div id="map-canvas"></div>                
             </div>
-
-            <br><br><br>
             <div class="row">
-                <div class="col-xs-12 text-center">      
+                <div class="col-xs-12 text-right">      
                     <div class="btn-group text-center">
-                        <button id="mode1" onclick="calcRoute(this.id);" type="button" value="DRIVING" class="btn btn-lg btn-primary center-block" ><i class="fa fa-car"></i></button>
-                        <button id="mode2" onclick="calcRoute(this.id);" type="button" value="TRANSIT" class="btn btn-lg btn-default center-block"><i class="fa fa-bus"></i></button>
-                        <button id="mode3" onclick="calcRoute(this.id);" type="button" value="WALKING" class="btn btn-lg btn-default center-block">Walk</button>
+                        <button id="mode1" onclick="calcRoute(this.id);" type="button" value="DRIVING" class="btn btn-lg btn-primary" ><i class="fa fa-car"></i></button>
+                        <button id="mode2" onclick="calcRoute(this.id);" type="button" value="TRANSIT" class="btn btn-lg btn-default"><i class="fa fa-bus"></i></button>
+                        <button id="mode3" onclick="calcRoute(this.id);" type="button" value="WALKING" class="btn btn-lg btn-default">Walk</button>
                     </div>
                 </div>   
-            </div><br/>
+            </div>
             <div class="row">
                 <div class="col-xs-12 direction-div text-center">
-                    <span class="heading-14">Select a route to take</span>
                     <div id="directions-panel"></div>
                 </div>       
             </div>
         </div>
+        
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
+        <script>
+            $("#mode1").click(function() {
+                
+            });
+        </script>
 
     </body>
 </html>

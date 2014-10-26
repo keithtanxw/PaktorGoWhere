@@ -69,7 +69,7 @@
                         <li onclick="window.location.href='newsfeed.jsp'"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</li>
                         <li onclick="window.location.href='goPaktor.jsp'"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</li>
                         <li onclick="window.location.href='profile.jsp'"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</li>
-                        <li onclick="window.location.href='search.jsp'"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</li>                        
+                        <li onclick="window.location.href='search.jsp'"><i class="fa fa-search"></i>&nbsp;&nbsp;Find Users</li>                        
                         <li onclick="window.location.href='bookmarks.jsp'"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</li>
                         <li onclick="window.location.href='login.jsp'"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</li>
                     </ul>
