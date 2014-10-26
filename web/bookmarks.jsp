@@ -49,7 +49,7 @@
                         <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
                         <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
                         <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>                        
+                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Find Users</a></li>                        
                         <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
                         <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
@@ -59,61 +59,106 @@
         <!----------------------------------------------------------------------------------- 
             Content Section
         !------------------------------------------------------------------------------------>
-        <div class="container-fluid main-content-no-padding">
-            <!----------------------------------------------------------------------------------- 
-                Head Area
-            !------------------------------------------------------------------------------------>
-
-
-            <!------------------------------------------ 
-                Search Bar
-            !------------------------------------------->
-            <div class="row search-bar" id="findPlacesBar">                
-                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-                    <form role="form">
-                        <!-- TODO: This input has to be dynamic !-->
-                        <label class="control-label" for="searchTextbox">Search bookmarks by</label>
-                        <input type="text" class="form-control" id="searchTextbox" placeholder="Enter name of place">
-                    </form>
+        <div class="container-fluid main-content">
+            <div class="row">
+                <!-- SEARCH BAR HERE !-->
+                <div class="advanced-search">
+                    <div class="header" id="filterToggle">
+                        <div style="width:50%;float:left">
+                            <span><i class="fa fa-search"></i>&nbsp;&nbsp;Filters</span>
+                        </div> 
+                        <div style="width:50%;float:left;" class="text-right">
+                            <span class="heading-14" style="text-decoration:none">
+                                <i id="directionIcon" class="fa fa-caret-up"></i>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="filter-section" id="selectFilters">
+                        <form role="form">                            
+                            <div class="form-group">
+                                <label for="locationTextbox" class="heading-09">Find by location</label>
+                                <input type="text" class="form-control" id="locationTextbox" placeholder="Enter location">
+                            </div>
+                            <div class="form-group">
+                                <label for="sortby" class="heading-09">Find by Place</label>
+                                <select class="form-control" id="sortby">
+                                    <option>Restaurants</option>
+                                    <option>Cafes</option>                                        
+                                    <option>Parks</option>
+                                    <option>Outdoors</option>
+                                    <option>Concerts</option>
+                                    <option>Festivals</option>
+                                    <option>Dark Corners</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div><br />
-            <!------------------------------------------ 
-                List Section
-            !------------------------------------------->      
-            <!-- CONTENTS HERE !-->
-                             
-               
-
+                <!-- END SEARCH BAR !-->
+                
+                <!-- CONTENTS HERE !-->
+                <div class="row">
+                    <!-- Entry Listing !-->
+                    <!-- TODO: Loop this !-->
+                    <div class="list-display">
+                        <div class="list-display-body">
+                            <div class="list-display-thumbnail">
+                                <img src="PaktorGoWhere/img/places/place1-sq.jpg" alt=""/>
+                            </div>
+                            <div class="list-display-place">
+                                <span class="heading-09"><strong>Name of Place</strong></span><br/>
+                                <span class="label label-primary">#restaurants</span>
+                                <span class="label label-primary">#fine-dining</span><br/>
+                                <span class="heading-08">12 Address Here</span>
+                            </div>
+                             <div class="list-display-distance text-right">
+                                 <span class="heading-10"><strong>2km</strong></span><br/>
+                                 <span class="heading-09"><strong>4&nbsp;&nbsp;<i class="fa fa-heart"></i></strong></span><br/>
+                                 <span class="heading-09"><strong>$12&nbsp;&nbsp;<i class="fa fa-user"></i></strong></span>
+                            </div>
+                        </div>
+                        <div class="list-display-description">
+                            <span class="heading-09">Description of place here...</span><br/>
+                        </div>
+                        <div class="list-display-footer">
+                            <button class="btn btn-primary">See More</button>&nbsp;&nbsp;
+                            <button class="btn btn-danger"><i class="fa fa-remove"></i></button>                            
+                        </div>                     
+                    </div>
+                </div>
+                
+                
+            </div>
+            
             <!--Scroll to the top-->
             <div class="col-xs-offset-10 col-xs-2">
-                <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                <a id="back-to-top" href="#" class="btn btn-info btn-sm back-to-top pull-left" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-chevron-up"></span></a>
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
-        <!-- Search Box's Javascript !-->
-        <script src="PaktorGoWhere/js/plugins/searchbox.js" type="text/javascript"></script>
 
 
         <script>
 
-        function followOrUnfollow(id) {
-            var name = document.getElementById(id).className;
-            var friendStatus = document.getElementById(id);
-
-            if (name === "td-friend text-center list-text-heavy") {
-                document.getElementById(id).className = "td-follow text-center list-text-heavy";
-                document.getElementById(id).innerHTML = "Follow";
-
-            } else {
-                document.getElementById(id).className = "td-friend text-center list-text-heavy";
-                document.getElementById(id).innerHTML = "Unfollow";
-            }
-
-        }
-
+        
         $(document).ready(function() {
+            
+            var status = 1;
+            $("#filterToggle").click(function() {
+                $("#selectFilters").slideToggle("normal");
+
+                //change the arrow direction
+                if (status === 1) {
+                    document.getElementById("directionIcon").className = "fa fa-caret-down";
+                    status = 2;
+                } else if (status === 2) {
+                    document.getElementById("directionIcon").className = "fa fa-caret-up";
+                    status = 1;
+                }
+            });
+        
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 50) {
                     $('#back-to-top').fadeIn();
@@ -123,14 +168,12 @@
             });
             // scroll body to 0px on click
             $('#back-to-top').click(function() {
-                $('#back-to-top').tooltip('hide');
                 $('body,html').animate({
                     scrollTop: 0
                 }, 800);
                 return false;
             });
 
-            $('#back-to-top').tooltip('show');
 
         });
         </script>

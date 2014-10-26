@@ -157,15 +157,15 @@
                             <i class="fa fa-heart-o"></i>
 
                         </div>
-                    
+
                     </div>
                 </div>
             </div><!-- close top row !-->
-            
+
             <!-- Comments Section !-->
             <!-- TODO: Loop here !-->
             <div class="row newsfeed-section">
-                <div class="col-xs-12 col-md-offset-2 col-md-8">
+                <div class="col-xs-12 col-md-offset-2 col-md-8" id="commentsArea">
                     <div class="newsfeed-panel">
                         <div class="newsfeed-panel-user">
                             <div class="img-section">
@@ -182,23 +182,204 @@
                             <span class="heading-09">Make sure to come here for a good stroll with your loved one</span>
                         </div>
                         <div class="newsfeed-panel-footer">
-                            <span>Ambience :&nbsp;&nbsp;4.5&nbsp;<i class="fa fa-heart"></i></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <span>Ambience :&nbsp;&nbsp;5&nbsp;<i class="fa fa-heart"></i></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                             <span>Value for money :&nbsp;&nbsp;4&nbsp;<i class="fa fa-heart"></i></span>                                             
                         </div>
                     </div>
+
+                    <div class="newsfeed-panel" id="commentNum1">
+                        <div class="newsfeed-panel-user">
+                            <div class="img-section">
+                                <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle" alt="User Image" />
+                            </div>
+                            <div class="img-side-section">
+                                <a href="#">
+                                    <span>Jundat</span><br/>
+                                    <span class="date"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;15 min ago, 22 Oct 2014</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsfeed-panel-comments">
+                            <span class="heading-09" id="newComment">Splendid place indeed</span>
+                        </div>
+                        <div class="newsfeed-panel-footer">
+                            <span>Ambience :&nbsp;&nbsp;5&nbsp;<i class="fa fa-heart"></i></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <span>Value for money :&nbsp;&nbsp;4&nbsp;<i class="fa fa-heart"></i></span>                                             
+                        </div>
+                    </div>
+
                 </div>    
             </div>
-            
-            
-            <div class='row text-center' style='padding-bottom: 30px'>
-                <button class='btn btn-lg btn-primary'>Add comment</button>
-            </div>
+        </div>
 
+
+        <div class='row text-center' style='padding-bottom: 30px'>
+            <button class="btn btn-lg btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Add comment</button>
         </div>
     </div>
+</div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
+
+
+<!--This is the code for launching the modal-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="modal1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">Make A Review</h4>
+            </div>
+            <div class="modal-body">
+                <div id="hearts" class="starrr"> <font style="color: black"><b>Ambience :</b></font>&nbsp</div>
+                <div id="hearts" class="starrr"> <font style="color: black"><b>Value for $:</b></font>&nbsp</div>
+                <p><b>Comment:</b></p>
+                <textarea class="form-control" rows="3" id="textCommentInput1"></textarea><br>
+                <button class="btn btn-lg btn-primary pull-right" onclick="addNewComment();">Post</button>
+                <br><br>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="PaktorGoWhere/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="PaktorGoWhere/js/plugins/sidebar.js" type="text/javascript"></script>
+
+<script>
+
+                    function addNewComment() {
+                        $('#modal1').modal('hide');
+                        $("#commentNum1").show();
+                        var commentsMade = document.getElementById('textCommentInput1').value;
+                        document.getElementById('newComment').innerHtml = "yo";
+                    }
+                    
+                    $(document).ready(function() {
+
+                        $("#commentNum1").hide();
+                        // Starrr plugin (https://github.com/dobtco/starrr)
+                        var __slice = [].slice;
+
+                        (function($, window) {
+                            var Starrr;
+
+                            Starrr = (function() {
+                                Starrr.prototype.defaults = {
+                                    rating: void 0,
+                                    numStars: 5,
+                                    change: function(e, value) {
+                                    }
+                                };
+
+                                function Starrr($el, options) {
+                                    var i, _, _ref,
+                                            _this = this;
+
+                                    this.options = $.extend({}, this.defaults, options);
+                                    this.$el = $el;
+                                    _ref = this.defaults;
+                                    for (i in _ref) {
+                                        _ = _ref[i];
+                                        if (this.$el.data(i) != null) {
+                                            this.options[i] = this.$el.data(i);
+                                        }
+                                    }
+                                    this.createStars();
+                                    this.syncRating();
+                                    this.$el.on('mouseover.starrr', 'span', function(e) {
+                                        return _this.syncRating(_this.$el.find('span').index(e.currentTarget) + 1);
+                                    });
+                                    this.$el.on('mouseout.starrr', function() {
+                                        return _this.syncRating();
+                                    });
+                                    this.$el.on('click.starrr', 'span', function(e) {
+                                        return _this.setRating(_this.$el.find('span').index(e.currentTarget) + 1);
+                                    });
+                                    this.$el.on('starrr:change', this.options.change);
+                                }
+
+                                Starrr.prototype.createStars = function() {
+                                    var _i, _ref, _results;
+
+                                    _results = [];
+                                    for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
+                                        _results.push(this.$el.append("<span class='glyphicon .glyphicon-heart-empty'></span>"));
+                                    }
+                                    return _results;
+                                };
+
+                                Starrr.prototype.setRating = function(rating) {
+                                    if (this.options.rating === rating) {
+                                        rating = void 0;
+                                    }
+                                    this.options.rating = rating;
+                                    this.syncRating();
+                                    return this.$el.trigger('starrr:change', rating);
+                                };
+
+                                Starrr.prototype.syncRating = function(rating) {
+                                    var i, _i, _j, _ref;
+
+                                    rating || (rating = this.options.rating);
+                                    if (rating) {
+                                        for (i = _i = 0, _ref = rating - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+                                            this.$el.find('span').eq(i).removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
+                                        }
+                                    }
+                                    if (rating && rating < 5) {
+                                        for (i = _j = rating; rating <= 4 ? _j <= 4 : _j >= 4; i = rating <= 4 ? ++_j : --_j) {
+                                            this.$el.find('span').eq(i).removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
+                                        }
+                                    }
+                                    if (!rating) {
+                                        return this.$el.find('span').removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
+                                    }
+                                };
+
+                                return Starrr;
+
+                            })();
+                            return $.fn.extend({
+                                starrr: function() {
+                                    var args, option;
+
+                                    option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+                                    return this.each(function() {
+                                        var data;
+
+                                        data = $(this).data('star-rating');
+                                        if (!data) {
+                                            $(this).data('star-rating', (data = new Starrr($(this), option)));
+                                        }
+                                        if (typeof option === 'string') {
+                                            return data[option].apply(data, args);
+                                        }
+                                    });
+                                }
+                            });
+                        })(window.jQuery, window);
+
+                        $(function() {
+                            return $(".starrr").starrr();
+                        });
+
+                        $(document).ready(function() {
+
+                            $('#hearts').on('starrr:change', function(e, value) {
+                                $('#count').html(value);
+                            });
+
+                            $('#hearts-existing').on('starrr:change', function(e, value) {
+                                $('#count-existing').html(value);
+                            });
+                        });
+                    });
+
+
+
+</script>
 </body>
 </html>
