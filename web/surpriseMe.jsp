@@ -50,8 +50,8 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-3 menu-left" onclick="window.location.href = 'goPaktor.jsp'"><i class="fa fa-chevron-left"></i></div>
-                <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">surprise me</a></div>
+                <div class="col-xs-9 menu-left" onclick="window.location.href = 'goPaktor.jsp'">
+                    <i class="fa fa-chevron-left"></i>&nbsp;&nbsp;surprise me</div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -88,13 +88,14 @@
                 <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
                     <form role="form">
                         <!-- TODO: This input has to be dynamic !-->
-                        <input type="text" class="form-control" id="searchTextbox" placeholder="Enter place">
+                        <label for="searchTextbox" class="heading-09">Search by location</label>
+                        <input type="text" class="form-control" id="searchTextbox" placeholder="Enter location">
                     </form>
                 </div>
             </div><br />
 
             <!------------------------------------------ 
-                Newsfeed Section
+                Surprise Section
             !------------------------------------------->
             <div class="row surprise-section">
                 <div class="col-xs-12 col-md-offset-2 col-md-8">                  
@@ -109,53 +110,20 @@
                             </ul>
                         </div>
                         <div class="newsfeed-panel-comments">
-                            <span class="heading">Henderson Waves</span>&nbsp;&nbsp;<span class="subheading">Telok Blangah</span>
-                            <br /><br />                            
-                            <span>Tucked away in a forested part of the city, enjoy a nice stroll with your loved one here</span>
+                            <span class="heading-10"><strong>Henderson Waves</strong></span><br/>
+                            <span class="heading-09"><em>Telok Blangah Rise</em></span><br/>
+                            <span class="label label-primary">#parks</span>
+                            <span class="label label-primary">#strolling</span>
                         </div>
                         <div class="newsfeed-panel-footer">
-                            <div class="col-xs-3 col-md-4 text-center left-side">
-                                <span>4.5&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-                            </div>
-                            <div class="col-xs-5 col-md-4 text-center left-side">
-                                <span>Free entry</span>
-                            </div>
-                            <div class="col-xs-4 col-md-4 text-center right-side">
-                                <a href="details.jsp"><span>12 reviews</span></a>
-                            </div>
+                            <span><i class="fa fa-heart"></i>&nbsp;&nbsp;4.5</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><i class="fa fa-user"></i>&nbsp;&nbsp;Free entry</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><i class="fa fa-comment"></i>&nbsp;&nbsp;<a href="details.jsp">12 reviews</a></span>                 
                         </div>
                     </div>
-
-                    <div class="newsfeed-panel" id="2">
-                        <div class="newsfeed-panel-image">
-                            <a href="details.jsp"><img src="PaktorGoWhere/img/places/cafe1.JPG" /></a>
-                        </div>
-                        <div class="newsfeed-panel-tags">
-                            <ul>
-                                <li>#cafe</li>
-                            </ul>
-                        </div>
-                        <div class="newsfeed-panel-comments">
-                            <span class="heading">Lover's Cafe</span>&nbsp;&nbsp;<span class="subheading">Tiong Bahru</span>
-                            <br /><br />                            
-                            <span>Cosy cafe for couples to enjoy, relax and embrace each other's love</span>
-                        </div>
-                        <div class="newsfeed-panel-footer">
-                            <div class="col-xs-3 col-md-4 text-center left-side">
-                                <span>4.0&nbsp;&nbsp;<i class="fa fa-heart"></i></span>
-                            </div>
-                            <div class="col-xs-5 col-md-4 text-center left-side">
-                                <span>$12 per person</span>
-                            </div>
-                            <div class="col-xs-4 col-md-4 text-center right-side">
-                                <a href="details.jsp"><span>32 reviews</span></a>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!------------------------------------------ 
-                        End Newsfeed Posts
+                        End Surprise Posts
                     !------------------------------------------->                           
 
                 </div>

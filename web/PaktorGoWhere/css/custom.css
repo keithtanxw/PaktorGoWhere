@@ -449,6 +449,33 @@ body{
 /*=============================================================
     END SEARCH BAR SECTION
 =============================================================*/
+/*=============================================================
+    ADVANCED SEARCH BAR SECTION
+=============================================================*/
+.advanced-search {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+          box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+}
+
+.advanced-search .header {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    height: 35px;
+}
+
+.advanced-search .filter-section {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    clear: both;
+}
+/*=============================================================
+    END ADVANCED SEARCH BAR SECTION
+=============================================================*/
 
 /*=============================================================
     LISTS
@@ -590,6 +617,61 @@ body{
 
 /*=============================================================
     LISTS
+=============================================================*/
+/*=============================================================
+    LISTS-2
+=============================================================*/
+.list-display {
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+          box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.list-display-body {
+    min-height: 90px;
+    clear: both;
+}
+
+.list-display-thumbnail {
+    width: 25%;
+    float: left;
+    padding-left:16px;
+}
+
+.list-display-distance {
+    width: 25%;
+    float: left;
+    padding: 10px 24px 10px 0px;
+    text-align: right;
+}
+
+.list-display-thumbnail > img {
+    width: 90px;
+    height: auto;
+}
+
+.list-display-place {
+    width: 50%;
+    float: left;
+    padding: 5px 10px;
+}
+
+.list-display-description {
+    padding: 10px 20px;
+}
+
+.list-display-footer {
+    padding: 10px 20px;
+    text-align: right;
+    border-top: 2px solid #e1e1e1;
+}
+
+
+/*=============================================================
+    LISTS-2
 =============================================================*/
 /*=============================================================
     FONT SIZES
