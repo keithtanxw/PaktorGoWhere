@@ -97,14 +97,14 @@
             <div class="row paktor-now-section">
                 <!-- FILTER HERE !-->
                 <div class="advanced-search">
-                    <div class="header">
+                    <div class="header" id="filterToggle">
                         <div style="width:50%;float:left">
                             <span><i class="fa fa-filter"></i>&nbsp;&nbsp;Filters</span>
                         </div> 
                         <div style="width:50%;float:left;" class="text-right">
-                            <a id="filterToggle" class="heading-14" style="text-decoration:none">
+                            <span class="heading-14" style="text-decoration:none">
                                 <i id="directionIcon" class="fa fa-caret-up"></i>
-                            </a>
+                            </span>
                         </div> 
                     </div>
                     <div class="filter-section" id="selectFilters">

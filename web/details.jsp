@@ -69,12 +69,12 @@
                 Tabs "Find People" & "Find Places"
             !------------------------------------------->
             <div class="row">
-                <div class="menu-tab turqoise-tab" id="findPerson" onclick="window.location.href = 'directions.jsp'">
+                <div class="menu-tab turqoise-tab" onclick="window.location.href = 'directions.jsp'">
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-share"></i>&nbsp;&nbsp;Directions</span>
                     </div>
                 </div>
-                <div class="menu-tab turqoise-tab" id="findPlaces" onclick="window.location.href = 'bookmarks.jsp'">
+                <div class="menu-tab turqoise-tab" onclick="window.location.href = 'bookmarks.jsp'">
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-plus"></i>&nbsp;&nbsp;Bookmark This</span>
                     </div>
