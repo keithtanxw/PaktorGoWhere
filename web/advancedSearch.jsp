@@ -119,7 +119,7 @@
                                 <select class="form-control" id="sortby">
                                     <option>Restaurants</option>
                                     <option>Cafes</option>                                        
-                                    <option>Strolling/Walking</option>
+                                    <option>Parks</option>
                                     <option>Outdoors</option>
                                     <option>Concerts</option>
                                     <option>Festivals</option>

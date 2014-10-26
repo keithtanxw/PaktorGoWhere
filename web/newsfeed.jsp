@@ -98,6 +98,9 @@
                             </div>
                         </div>
                         <div class="newsfeed-panel-comments">
+                            <span class="heading-09"><strong>Fort Canning Park</strong></span><br/>
+                            <span class="label label-primary">#parks</span>
+                            <span class="label label-primary">#strolling</span><br/>
                             <span class="heading-09">Make sure to come here for a good stroll with your loved one</span>
                         </div>
                         <div class="newsfeed-panel-footer">
