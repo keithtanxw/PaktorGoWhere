@@ -11,7 +11,7 @@ and open the template in the editor.
 /* Side Menu */
 
 #sidebar-wrapper {
-    z-index: 2000;
+    z-index: 200;
     position: fixed;
     right: 0;
     width: 300px;

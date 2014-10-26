@@ -35,8 +35,7 @@
                     Nav Section 
                 !------------------------------------------------------------------------------------>
                 <nav class="navbar navbar-default navbar-fixed-top profile-nav" role="navigation">           
-                    <div class="col-xs-3 menu-left"><i class="fa fa-chevron-left"></i></div>
-                    <div class="col-xs-6 menu-center text-center"><a href="newsfeed.jsp">Profile</a></div>
+                    <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Profile</div>
                     <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
                 </nav>
             </div>
@@ -67,21 +66,19 @@
             <!-- Profile Image Section !-->
             <div class="container-fluid profile-header">
                 <div class="row-fluid">
-                    <div class="col-xs-8 col-xs-offset-2 text-center">
-                        <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle userPic-medium">
-                    </div>
-                    <div class="col-xs-8 col-xs-offset-2 text-center">
-                        <h3>jundat90</h3>
-                    </div>
-                    <div class="col-xs-8 col-xs-offset-2 line-break"></div>
-                    <div class="col-xs-8 col-xs-offset-2 text-center">
-                        <span class="profile-text">Ultimate Foodie</span>
-                        <br />
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="profile-pic-section">
+                            <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-thumbnail userPic-medium">
+                        </div>
+                        <div class="profile-name-section">
+                             <span class="profile-name-text">jundat90</span><br/>
+                             <span class="profile-nickname-text">Ultimate Foodie</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>    
-        <div class="container-fluid" style="padding-top: 20px">
+        <div class="container-fluid" style="padding-top: 40px">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-center profile-content">
                     <p>I think food is an art, culture and part of our lives</p>

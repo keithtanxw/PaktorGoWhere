@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/newsfeed.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/directions.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/search.jsp</file>
@@ -11,6 +12,13 @@
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/surpriseMe.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/details.jsp</file>
             <file>file:/D:/GitHub/PaktorGoWhere/PaktorGoWhere/web/advancedSearch.jsp</file>
+=======
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/newsfeed.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/PaktorGoWhere/css/custom.css</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/goPaktor.jsp</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/PaktorGoWhere/css/newsfeedPanel.css</file>
+            <file>file:/C:/GitHub/PaktorGoWhere/PaktorGoWhere/web/profile.jsp</file>
+>>>>>>> 26fc667ad2c8ce3f832c2404170bf481914ee82f
         </group>
     </open-files>
 </project-private>
