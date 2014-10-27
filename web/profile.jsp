@@ -125,7 +125,7 @@
                         <tr>
                             <td>
                                 <span  class="heading-09"><strong>Kila Kila Point</strong></span>&nbsp;&nbsp;
-                                <span class="heading-09 heading-grey"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;22 Oct 2014, 9:30PM</span><br/>
+                                <span class="heading-08 heading-grey"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;22 Oct 2014, 9:30PM</span><br/>
                                 <span class="heading-09">
                                     Had an awesome dinner with love this evening here. Food here is amazing and worth coming back to.
                                 </span>
@@ -134,7 +134,7 @@
                         <tr>
                             <td>
                                 <span  class="heading-09"><strong>J-Cube Ice Skating</strong></span>&nbsp;&nbsp;
-                                <span class="heading-09 heading-grey"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;20 Oct 2014, 4:30PM</span><br/>
+                                <span class="heading-08 heading-grey"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;20 Oct 2014, 4:30PM</span><br/>
                                 <span class="heading-09">
                                     Enjoyed ice skating with love this afternoon! They had a 1-for-1 promo at $18. Skated for an hr.
                                 </span>
