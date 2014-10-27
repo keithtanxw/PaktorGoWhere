@@ -185,15 +185,14 @@ body{
 }
 
 .profile-name-text {
-    font-size: 2em;;
     font-weight: 700;
     color: #32353b;
 }
 
 .profile-nickname-text {
     color: #888;
-    font-size: 1em;
     font-style: italic;
+    font-weight: 700;
     letter-spacing: 0.2em;
 }
 
@@ -726,6 +725,10 @@ body{
 
 .pink-color {
     color: #fa2255;    
+}
+
+.heading-grey {
+    color:#888;
 }
 
 /*=============================================================

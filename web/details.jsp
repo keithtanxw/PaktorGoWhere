@@ -23,8 +23,6 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
-        <!-- Newsfeed Panel !-->
-        <link rel="stylesheet" href="PaktorGoWhere/css/newsfeedPanel.css">
 
     </head>
     <body>
