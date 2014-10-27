@@ -80,98 +80,122 @@
                     </div>
                 </div>
             </div>
+            <!------------------------------------------ 
+                Details
+            !------------------------------------------->
             <div class="row">
-                <table class="table table-hover" id='details-table'>
-                    <tr>
-                        <td class="text-center">
-                            <span class="heading-14" style='padding-top:10px'>Shabestan Persian</span><br/>
-                            <span class="label label-primary">#restaurant</span>
-                            <span class="label label-primary">#fine-dining</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address: </strong>&nbsp;&nbsp;12 Bras Basah Road, Singapore 123456
-                            </span>
-                        </td>
-                    </tr>                    
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-building"></i>&nbsp;&nbsp;<strong>Distance from current location: </strong>&nbsp;&nbsp;2km
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-laptop"></i>&nbsp;&nbsp;<strong>Website: </strong>&nbsp;&nbsp;http://www.shabestan.com.sg
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<strong>Opening Hours: </strong>&nbsp;&nbsp;10am - 10pm
-                            </span>
-                        </td>
-                    </tr>                    
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Description: </strong><br/><br/>
-                            </span>
-                            <span class='heading-09'>
-                                Beautiful Persian styled restaurant serving Mediterranean cuisine from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss.
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Ratings: </strong><br/>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading-09">
-                                <i class="fa fa-star"></i>&nbsp;&nbsp;<strong>Promotions: </strong><br/>
-                            </span>
-                            <ul>
-                                <li><span class="heading-09">20% off couple's main course</span></li>
-                                <li><span class="heading-09">1-for-1 lunch deal</span></li>
-                            </ul>
-                        </td>
-                    </tr>
- 
-                </table>
-                
-                
-                
-                
-                
-                
-            </div><!-- close top row !-->
+                <!------------------------------------------ 
+                    Place Name
+                !------------------------------------------->
+                <div class="place-section text-center">
+                    <span class="heading-14" style='padding-top:10px'>Shabestan Persian</span><br/>
+                    <span class="label label-primary">#restaurant</span>
+                    <span class="label label-primary">#fine-dining</span>
+                </div>
+                <!------------------------------------------ 
+                    Hide Details
+                !------------------------------------------->
+                <div class="place-details-caret text-center" id="place-details-hide-show">
+                    <span class="heading-14"><i class="fa fa-caret-up" id="hide-show-caret"></i></span>&nbsp;&nbsp;
+                    <span class="heading-09" id="hide-show-details">Hide Details</span>
+                </div>
+                <!------------------------------------------ 
+                    Details Listing
+                !------------------------------------------->
+                <div id="details-listing">
+                    <table class="table table-hover" id='details-table'>                    
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address: </strong>&nbsp;&nbsp;12 Bras Basah Road, Singapore 123456
+                                </span>
+                            </td>
+                        </tr>                    
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-building"></i>&nbsp;&nbsp;<strong>Distance from current location: </strong>&nbsp;&nbsp;2km
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-desktop"></i>&nbsp;&nbsp;<strong>Website: </strong>&nbsp;&nbsp;http://www.shabestan.com.sg
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<strong>Opening Hours: </strong>&nbsp;&nbsp;10:00am - 10:00pm
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-users"></i>&nbsp;&nbsp;<strong>Peak Periods: </strong>&nbsp;&nbsp;Weekends 6:00pm - 8:30m
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-list"></i>&nbsp;&nbsp;<strong>Description: </strong><br/><br/>
+                                </span>
+                                <span class='heading-09'>
+                                    Beautiful Persian styled restaurant serving Mediterranean cuisine from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;<strong>Ratings: </strong><br/>
+                                </span><br/>
+                                <div class="col-xs-6">
+                                    <span class="heading-09">Ambience</span>&nbsp;&nbsp;
+                                    <span class="heading-14">4.5</span>&nbsp;
+                                    <span class="heading-10 pink-color"><i class="fa fa-heart"></i></span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <span class="heading-09">Value for Money</span>&nbsp;&nbsp;
+                                    <span class="heading-14">4.0</span>&nbsp;
+                                    <span class="heading-10 pink-color"><i class="fa fa-heart"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="heading-09">
+                                    <i class="fa fa-star"></i>&nbsp;&nbsp;<strong>Current Promotions: </strong><br/>
+                                </span>
+                                <ul>
+                                    <li><span class="heading-09">20% off couple's main course</span></li>
+                                    <li><span class="heading-09">1-for-1 lunch deal</span></li>
+                                </ul>
+                            </td>
+                        </tr>
 
-            <!-- Comments Section !-->
+                    </table>
+                </div>
+                <!------------------------------------------ 
+                    End Details
+                !------------------------------------------->
+            </div><!-- close top row !-->
+            <!------------------------------------------ 
+                Comments
+            !------------------------------------------->
             <!-- TODO: Loop here !-->
-            <div class="row newsfeed-section">
+            <div class="row newsfeed-section" style="padding-top: 0px">
                 <div class="col-xs-12 col-md-offset-2 col-md-8" id="commentsArea">
                     <div class="newsfeed-panel">
                         <div class="newsfeed-panel-user">
@@ -218,35 +242,38 @@
                 </div>    
             </div>
         </div>
+        <!------------------------------------------ 
+            End Comments
+        !------------------------------------------->
 
-
+        <!------------------------------------------ 
+            Add Comments
+        !------------------------------------------->
         <div class='row text-center' style='padding-bottom: 30px'>
             <button class="btn btn-lg btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Add comment</button>
         </div>
-    </div>
-</div>
 
-
-
-<!--This is the code for launching the modal-->
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="modal1">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="mySmallModalLabel">Make A Review</h4>
-            </div>
-            <div class="modal-body">
-                <div id="hearts" class="starrr"> <font style="color: black"><b>Ambience :</b></font>&nbsp</div>
-                <div id="hearts" class="starrr"> <font style="color: black"><b>Value for $:</b></font>&nbsp</div>
-                <p><b>Comment:</b></p>
-                <textarea class="form-control" rows="3" id="textCommentInput1"></textarea><br>
-                <button class="btn btn-lg btn-primary pull-right" onclick="addNewComment();">Post</button>
-                <br><br>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        <!------------------------------------------ 
+            Comments Modal
+        !------------------------------------------->
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="modal1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="mySmallModalLabel">Make A Review</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="hearts" class="starrr"> <font style="color: black"><b>Ambience :</b></font>&nbsp</div>
+                        <div id="hearts" class="starrr"> <font style="color: black"><b>Value for $:</b></font>&nbsp</div>
+                        <p><b>Comment:</b></p>
+                        <textarea class="form-control" rows="3" id="textCommentInput1"></textarea><br>
+                        <button class="btn btn-lg btn-primary pull-right" onclick="addNewComment();">Post</button>
+                        <br><br>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
 
 
@@ -264,7 +291,33 @@
                         document.getElementById('newComment').innerHtml = "yo";
                     }
                     
+                    // Function for Hiding the Details
+                    function hideDetails() {
+                        
+                        // Set visible = true since at the start, the details are shown already
+                        var visible = true;                        
+                        
+                        $("#place-details-hide-show").click(function() {
+                            
+                            $("#details-listing").slideToggle("normal");
+                            
+                            if(visible == true)
+                            {                                
+                                $("#hide-show-details").text("Show Details");
+                                $("#hide-show-caret").attr('class', 'fa fa-caret-down');
+                                visible = false;
+                            } else {
+                                $("#hide-show-details").text("Hide Details");
+                                $("#hide-show-caret").attr('class', 'fa fa-caret-up');
+                                visible = true;
+                            }
+                        });
+                    }
+                    
                     $(document).ready(function() {
+
+                        hideDetails();
+
 
                         $("#commentNum1").hide();
                         // Starrr plugin (https://github.com/dobtco/starrr)
@@ -373,15 +426,12 @@
                             return $(".starrr").starrr();
                         });
 
-                        $(document).ready(function() {
+                        $('#hearts').on('starrr:change', function(e, value) {
+                            $('#count').html(value);
+                        });
 
-                            $('#hearts').on('starrr:change', function(e, value) {
-                                $('#count').html(value);
-                            });
-
-                            $('#hearts-existing').on('starrr:change', function(e, value) {
-                                $('#count-existing').html(value);
-                            });
+                        $('#hearts-existing').on('starrr:change', function(e, value) {
+                            $('#count-existing').html(value);
                         });
                     });
 
