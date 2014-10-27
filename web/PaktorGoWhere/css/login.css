@@ -15,6 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
     background: #E7E7EE;
+    
 }
 
 .overlay {
@@ -32,9 +33,7 @@ body {
 }
 
 #logoSection {
-    padding-bottom: 50px;
-    background-color: #fa2255;
-    height: 100px;
+    padding: 40px 10px 80px;
     
 }
 
@@ -44,6 +43,7 @@ body {
     background-color: rgba(248,248,248,0.9);    
     -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .1);
           box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .1);
+    margin-top: -50px;
 }
 
 .login-body {

@@ -22,7 +22,7 @@
         
         <div class="container-fluid">                
             <div class="row text-center" id="logoSection">
-                <h3>paktorgowhere</h3>
+                <h3>Logo Here</h3>
             </div>
         </div>
         <div class="container-fluid" id="mainSection">
