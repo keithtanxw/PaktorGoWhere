@@ -33,7 +33,7 @@ and open the template in the editor.
 }
 
 #sidebar-wrapper.active {
-    right: 270px;
+    right: 280px;
     width: 270px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
@@ -57,6 +57,10 @@ and open the template in the editor.
     -moz-background-size: 400px;
     -o-background-size: 400px;
     background-size: 400px;
+}
+
+.sidebar-body .user-panel:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -131,8 +135,7 @@ and open the template in the editor.
 
 .user-panel-text {    
     line-height: 1.5em;
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: 700;
     text-transform: uppercase;
 }

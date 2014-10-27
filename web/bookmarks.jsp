@@ -40,7 +40,7 @@
         !------------------------------------------------------------------------------------>
         <nav id="sidebar-wrapper">
             <div class="sidebar-body">
-                <div class="user-panel text-center">
+                <div class="user-panel text-center" onclick="window.location.href = 'profile.jsp'">
                     <img src="PaktorGoWhere/img/profilepics/jundat.jpg" class="img-circle panel-pic" alt="User Image" />&nbsp;&nbsp;
                     <span class="user-panel-text">Jundat90</span>
                 </div>
@@ -48,8 +48,7 @@
                     <ul>
                         <li><a href="newsfeed.jsp"><i class="fa fa-home"></i>&nbsp;&nbsp;Newsfeed Home</a></li>
                         <li><a href="goPaktor.jsp"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</a></li>
-                        <li><a href="profile.jsp"><i class="fa fa-user"></i>&nbsp;&nbsp;My Profile</a></li>
-                        <li><a href="search.jsp"><i class="fa fa-search"></i>&nbsp;&nbsp;Find Users</a></li>                        
+                        <li><a href="search.jsp"><i class="fa fa-tag"></i>&nbsp;&nbsp;Following</a></li>                        
                         <li><a href="bookmarks.jsp"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;My Bookmarks</a></li>
                         <li><a href="login.jsp"><i class="fa fa-unlock"></i>&nbsp;&nbsp;Logout</a></li>
                     </ul>
@@ -80,7 +79,7 @@
                                 <input type="text" class="form-control" id="locationTextbox" placeholder="Enter location">
                             </div>
                             <div class="form-group">
-                                <label for="sortby" class="heading-09">Find by Place</label>
+                                <label for="sortby" class="heading-09">Find by Place Type</label>
                                 <select class="form-control" id="sortby">
                                     <option>Restaurants</option>
                                     <option>Cafes</option>                                        

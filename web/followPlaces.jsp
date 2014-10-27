@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -61,12 +62,12 @@
                 Tabs "Find People" & "Find Places"
             !------------------------------------------->
             <div class="row">
-                <div class="menu-tab turqoise-tab-active">
+                <div class="menu-tab turqoise-tab" onclick="window.location.href = 'search.jsp'">
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-user"></i>&nbsp;&nbsp;Follow User</span>
                     </div>
                 </div>
-                <div class="menu-tab turqoise-tab" onclick="window.location.href = 'followPlaces.jsp'">
+                <div class="menu-tab turqoise-tab-active" >
                     <div class="col-xs-12 text-center">
                         <span class="menu-tab-text"><i class="fa fa-building"></i>&nbsp;&nbsp;Follow Place</span>
                     </div>
@@ -78,7 +79,7 @@
                 <div class="advanced-search">
                     <div class="header" id="filterToggle">
                         <div style="width:50%;float:left">
-                            <span><i class="fa fa-search"></i>&nbsp;&nbsp;Find a user to follow</span>
+                            <span><i class="fa fa-search"></i>&nbsp;&nbsp;Find a place to follow</span>
                         </div> 
                         <div style="width:50%;float:left;" class="text-right">
                             <span class="heading-14" style="text-decoration:none">
@@ -89,71 +90,66 @@
                     <div class="filter-section" id="selectFilters">
                         <form role="form">                            
                             <div class="form-group">
-                                <span class="heading-09">By following a user, the user's reviews will be displayed on your newsfeed page.</span><br/><br/>
-                                <label for="searchTextbox" class="heading-09">Find by user id or name</label>
-                                <input type="text" class="form-control" id="searchTextbox" placeholder="Enter id or name">
-                            </div>                            
+                                <span class="heading-09">By following a place, reviews of the place will be displayed on your newsfeed page.</span><br/><br/>
+                                <label for="sortby" class="heading-09">Find by Place Type</label>
+                                <select class="form-control" id="sortby">
+                                    <option>Restaurants</option>
+                                    <option>Cafes</option>                                        
+                                    <option>Parks</option>
+                                    <option>Outdoors</option>
+                                    <option>Concerts</option>
+                                    <option>Festivals</option>
+                                    <option>Dark Corners</option>
+                                </select>
+                            </div>
+                            <div class="form-group">                                
+                                <label for="searchTextbox" class="heading-09">Find a place under this category</label>
+                                <input type="text" class="form-control" id="searchTextbox" placeholder="Enter a place tag">
+                            </div>
                         </form>
                     </div>
                 </div>
                 <!-- END SEARCH BAR !-->
                 <table class="table table-hover" id="list-table">
+                    <%
+                        ArrayList<String> placetag = new ArrayList<String>();
+                        placetag.add("#fine-dining");
+                        placetag.add("#alfresco");
+                        placetag.add("#japanese");
+                        placetag.add("#chinese");
+                        placetag.add("#korean");
+                        placetag.add("#french");
+                        placetag.add("#dim-sum");
+                        placetag.add("#western");
+                        placetag.add("#indian");
+                        
+                        Collections.sort(placetag);
+                        
+                        for(int i=0; i < placetag.size(); i++) {
+                            String tag = placetag.get(i);
+                            
+                    %>
                     <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/jundat.jpg"  class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="heading-10"><strong>Jundat90</strong></span><br />
-                            <span class="list-text-subtext">12 reviews</span>
+                        <td class='td-tag'>
+                            <span class="heading-10"><strong><%=tag%></strong></span><br />
                         </td>
+                    <%
+                            if(tag.equals("#dim-sum")) {
+                    %>    
                         <td class="td-follow text-center">
                             <span class="follow-label">Following</span>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/iu.jpg" class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="heading-10"><strong>IU</strong></span><br />
-                            <span class="list-text-subtext">32 reviews</span>
-                        </td>
-                        <td class="td-follow text-center"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/beckham.jpg" class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="list-text-heavy">BeckhamD</span><br />
-                            <span class="list-text-subtext">73 reviews</span>
-                        </td>
+                    <%
+                            } else {
+                    %>    
                         <td class="td-follow text-center">
-                            <span class="follow-label">Following</span>
+                            
                         </td>
                     </tr>
-                    <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/taeyeon.jpg" class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="list-text-heavy">Taeyeon</span><br />
-                            <span class="list-text-subtext">40 reviews</span>
-                        </td>
-                        <td class="td-follow text-center">
-                            <span class="follow-label">Following</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/andylau.jpg" class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="list-text-heavy">AndyLau</span><br />
-                            <span class="list-text-subtext">55 reviews</span>
-                        </td>
-                        <td class="td-follow text-center"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-img" onclick="window.location.href='profile.jsp'"><img src="PaktorGoWhere/img/profilepics/ahbeng.jpg" class="list-table-img" /></td>
-                        <td onclick="window.location.href='profile.jsp'">
-                            <span class="list-text-heavy">XiaoBengx</span><br />
-                            <span class="list-text-subtext">62 reviews</span>
-                        </td>
-                        <td class="td-follow text-center">
-                            <span class="follow-label">Following</span>
-                        </td>
-                    </tr>
+                    <%
+                            }
+                        }
+                    %>                   
                     
                 </table>
 

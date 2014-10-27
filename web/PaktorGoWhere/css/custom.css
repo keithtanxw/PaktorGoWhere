@@ -406,6 +406,12 @@ body{
     border-bottom: 2px solid #D8D8DC;
     color: #39CCCC;
 }
+
+.turqoise-tab-active {
+    background: #F7F7F7;
+    border-bottom: 2px solid #D8D8DC;
+    color: #39CCCC;
+}
 /*=============================================================
     END TWIN MENU TAB
 =============================================================*/
@@ -559,6 +565,12 @@ body{
     width: 20%;
 }
 
+#list-table > thead > tr > .td-tag,
+#list-table > tbody > tr > .td-tag,
+#list-table > tfoot > tr > .td-tag {
+    padding: 20px 20px;
+}
+
 #list-table > thead > tr > .td-follow,
 #list-table > tbody > tr > .td-follow,
 #list-table > tfoot > tr > .td-follow {
@@ -586,22 +598,6 @@ body{
     font-size: 0.9em;
 }
 
-#list-table1 > thead > tr > td,
-#list-table1 > tbody > tr > td,
-#list-table1 > tfoot > tr > td {
-    padding: 9px 8px;
-}
-
-#list-table1 > thead > tr > .td-img,
-#list-table1 > tbody > tr > .td-img,
-#list-table1 > tfoot > tr > .td-img {
-    padding: 0px;
-    width: 15%;
-}
-
-#list-table1 > tbody + tbody {
-    border-top: 4px solid #ddd;
-}
 
 /*=============================================================
     LISTS
@@ -614,6 +610,10 @@ body{
 #details-table > tbody > tr > td,
 #details-table > tfoot > tr > td {
     padding: 10px 15px;
+}
+
+.add-margin {
+    margin-bottom: 10px;
 }
 
 /*=============================================================
@@ -634,7 +634,7 @@ body{
 }
 
 .list-display-thumbnail {
-    width: 25%;
+    width: 30%;
     float: left;
     padding-left:16px;
 }
@@ -652,7 +652,7 @@ body{
 }
 
 .list-display-place {
-    width: 50%;
+    width: 40%;
     float: left;
     padding: 5px 10px;
 }
