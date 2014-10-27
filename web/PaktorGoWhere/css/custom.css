@@ -572,7 +572,6 @@ body{
     font-size: 0.9em;
 }
 
-
 #list-table1 > thead > tr > td,
 #list-table1 > tbody > tr > td,
 #list-table1 > tfoot > tr > td {
@@ -583,27 +582,7 @@ body{
 #list-table1 > tbody > tr > .td-img,
 #list-table1 > tfoot > tr > .td-img {
     padding: 0px;
-    width: 20%;
-}
-
-#list-table1 > thead > tr > .td-follow,
-#list-table1 > tbody > tr > .td-follow,
-#list-table1 > tfoot > tr > .td-follow {
-    padding: 25px 8px 15px;
-    width: 30%;
-    color: #999;
-
-}
-
-#list-table1 > thead > tr > .td-friend,
-#list-table1 > tbody > tr > .td-friend,
-#list-table1 > tfoot > tr > .td-friend {
-    padding: 25px 8px 15px;
-    width: 30%;
-    background-color: #41D696;
-    color: #f5f5f5;
-    border-bottom: 3px solid #3EC98D;
-    border-right: 4px solid #3EC98D;
+    width: 15%;
 }
 
 #list-table1 > tbody + tbody {
@@ -613,6 +592,16 @@ body{
 /*=============================================================
     LISTS
 =============================================================*/
+#details-table {
+    background-color: #f8f8f8;
+}
+
+#details-table > thead > tr > td,
+#details-table > tbody > tr > td,
+#details-table > tfoot > tr > td {
+    padding: 10px 15px;
+}
+
 /*=============================================================
     LISTS-2
 =============================================================*/

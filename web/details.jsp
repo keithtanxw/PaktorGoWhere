@@ -81,85 +81,92 @@
                 </div>
             </div>
             <div class="row">
-                <ul class="list-group">
-                    <li class="list-group-item text-center">
-                        <span class="heading-14" style='padding-top:10px'>Shabestan Persian</span><br/>
-                        <span class="label label-primary">#restaurant</span>
-                        <span class="label label-primary">#fine-dining</span>
-                    </li>                    
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address: </strong>&nbsp;&nbsp;12 Bras Basah Road, Singapore 123456
-                        </span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-building"></i>&nbsp;&nbsp;<strong>Distance from current location: </strong>&nbsp;&nbsp;2km
-                        </span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
-                        </span>
-                    </li>    
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-laptop"></i>&nbsp;&nbsp;<strong>Website: </strong>&nbsp;&nbsp;http://www.shabestan.com.sg
-                        </span>                      
-                    </li>
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<strong>Opening Hours: </strong>&nbsp;&nbsp;10am - 10pm
-                        </span>
-                    </li> 
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-users"></i>&nbsp;&nbsp;<strong>Peak Periods: </strong>&nbsp;&nbsp;Weekends 6pm - 8.30pm
-                        </span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-user"></i>&nbsp;&nbsp;<strong>Price per person: </strong>&nbsp;&nbsp;SGD 23
-                        </span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="heading-09">
-                            <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Description: </strong><br/>Beautiful Persian styled restaurant serving Mediterranean cuisine from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss.
-                        </span>
-                    </li>
-                </ul>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <span class="heading-09"><i class="fa fa-heart"></i>&nbsp;&nbsp;<strong>Ratings: </strong></span><br/><br/>
-                        <div class="col-xs-6 text-right">
-                            <span class="heading-09">Ambience</span>                                              
-                        </div>
-                        <div class="col-xs-6 pink-color">
-
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart-o"></i>
-
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <span class="heading-09">Value For Money</span>                                              
-                        </div>
-                        <div class="col-xs-6 pink-color">
-
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-heart-o"></i>
-
-                        </div>
-
-                    </div>
-                </div>
+                <table class="table table-hover" id='details-table'>
+                    <tr>
+                        <td class="text-center">
+                            <span class="heading-14" style='padding-top:10px'>Shabestan Persian</span><br/>
+                            <span class="label label-primary">#restaurant</span>
+                            <span class="label label-primary">#fine-dining</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<strong>Address: </strong>&nbsp;&nbsp;12 Bras Basah Road, Singapore 123456
+                            </span>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-building"></i>&nbsp;&nbsp;<strong>Distance from current location: </strong>&nbsp;&nbsp;2km
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-laptop"></i>&nbsp;&nbsp;<strong>Website: </strong>&nbsp;&nbsp;http://www.shabestan.com.sg
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-phone-square"></i>&nbsp;&nbsp;<strong>Phone No: </strong>&nbsp;&nbsp;(65) 6269 3411
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-clock-o"></i>&nbsp;&nbsp;<strong>Opening Hours: </strong>&nbsp;&nbsp;10am - 10pm
+                            </span>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Description: </strong><br/><br/>
+                            </span>
+                            <span class='heading-09'>
+                                Beautiful Persian styled restaurant serving Mediterranean cuisine from Turkey to Lebanon. Famous for it's chicken kebab, it is a place not to miss.
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>Ratings: </strong><br/>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="heading-09">
+                                <i class="fa fa-star"></i>&nbsp;&nbsp;<strong>Promotions: </strong><br/>
+                            </span>
+                            <ul>
+                                <li><span class="heading-09">20% off couple's main course</span></li>
+                                <li><span class="heading-09">1-for-1 lunch deal</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+ 
+                </table>
+                
+                
+                
+                
+                
+                
             </div><!-- close top row !-->
 
             <!-- Comments Section !-->
