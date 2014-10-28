@@ -31,7 +31,10 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-9 menu-left"><a href="newsfeed.jsp">Newsfeed</a></div>
+                <div class="col-xs-9 menu-left">
+                    <img src="PaktorGoWhere/img/appPics/app_icon_navbar.PNG" class="nav-icon" alt="icon"/>&nbsp;
+                    Newsfeed
+                </div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>
@@ -64,11 +67,15 @@
                 Tabs "Go Paktor"
             !------------------------------------------->
             <div class="row">
-                <div class="paktor-tab blue-tab" id="goPaktor" onclick="window.location.href='goPaktor.jsp'">
-                    <div class="col-xs-12 text-center">
-                        <span class="paktor-tab-text"><i class="fa fa-heart"></i>&nbsp;&nbsp;Go Paktor</span>
+                <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 ">
+                    <div class="paktor-tab blue-tab text-center" id="goPaktor" onclick="window.location.href='goPaktor.jsp'">                        
+                        <span class="paktor-tab-text">
+                            <img src="PaktorGoWhere/img/appPics/app_icon_navbar.PNG" class="nav-icon" alt="icon"/>
+                            &nbsp;Go Paktor
+                        </span>                        
                     </div>
                 </div>
+                
             </div>
             
             <!------------------------------------------ 

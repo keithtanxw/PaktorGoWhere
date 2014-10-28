@@ -164,7 +164,7 @@
                 Nav Section 
             !------------------------------------------------------------------------------------>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">           
-                <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left" onclick="window.location.href = 'details.jsp'"></i>&nbsp;&nbsp;Directions</div>
+                <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left" onclick="history.go(-1); return false;"></i>&nbsp;&nbsp;Directions</div>
                 <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
             </nav>
         </div>

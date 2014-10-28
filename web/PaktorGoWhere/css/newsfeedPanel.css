@@ -94,12 +94,12 @@ and open the template in the editor.
 }
 
 .newsfeed-panel .img-section {
-    width: 18%;
+    width: 25%;
     float: left;
 }
 
 .newsfeed-panel .img-side-section {
-    width: 82%;
+    width: 75%;
     float: left;
 }
 

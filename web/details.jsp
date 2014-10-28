@@ -19,10 +19,10 @@
         <link rel="stylesheet" href="PaktorGoWhere/css/custom.css">
         <!-- Custom Navbar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/navbar.css">
-        <!-- Google Styled Panel !-->
-        <link rel="stylesheet" href="PaktorGoWhere/css/googlePanel.css">
         <!-- Sidebar !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/sidebar.css">
+        <!-- Newsfeed Panel !-->
+        <link rel="stylesheet" href="PaktorGoWhere/css/newsfeedPanel.css">
 
     </head>
     <body>
@@ -159,13 +159,13 @@
                                     <i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;<strong>Ratings: </strong><br/>
                                 </span><br/>
                                 <div class="col-xs-6">
-                                    <span class="heading-09">Ambience</span>&nbsp;&nbsp;
-                                    <span class="heading-14">4.5</span>&nbsp;
+                                    <span class="heading-09">Ambience</span><br/>
+                                    <span class="heading-14">4.5</span>&nbsp;&nbsp;
                                     <span class="heading-10 pink-color"><i class="fa fa-heart"></i></span>
                                 </div>
                                 <div class="col-xs-6">
-                                    <span class="heading-09">Value for Money</span>&nbsp;&nbsp;
-                                    <span class="heading-14">4.0</span>&nbsp;
+                                    <span class="heading-09">Value for Money</span><br/>
+                                    <span class="heading-14">4.0</span>&nbsp;&nbsp;
                                     <span class="heading-10 pink-color"><i class="fa fa-heart"></i></span>
                                 </div>
                             </td>
@@ -210,8 +210,8 @@
                             <span class="heading-09">Make sure to come here for a good stroll with your loved one</span>
                         </div>
                         <div class="newsfeed-panel-footer">
-                            <span>Ambience :&nbsp;&nbsp;5&nbsp;<i class="fa fa-heart"></i></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                            <span>Value for money :&nbsp;&nbsp;4&nbsp;<i class="fa fa-heart"></i></span>                                             
+                            <span>Ambience :&nbsp;5&nbsp;&nbsp;<i class="fa fa-heart"></i></span><br/>
+                            <span>Value for money :&nbsp;4&nbsp;&nbsp;<i class="fa fa-heart"></i></span>                                             
                         </div>
                     </div>
 

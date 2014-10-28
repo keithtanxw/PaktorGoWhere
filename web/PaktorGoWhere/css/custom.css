@@ -111,11 +111,11 @@ body{
 =============================================================*/
 .paktor-tab {
     margin: 10px 15px 0px;
-    padding-bottom: 10px;
-    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-top: 10px;
     height: 50px;
     border: 0px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .paktor-tab:hover {
@@ -126,7 +126,6 @@ body{
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 2px;
 }
 
 .newsfeed-section {

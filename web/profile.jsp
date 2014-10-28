@@ -11,6 +11,11 @@
         <title>PaktorGoWhere</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Web Icon !-->
+        <link href="PaktorGoWhere/img/appPics/app_icon_152.PNG" rel="apple-touch-icon-precomposed"/>
+        <link href="PaktorGoWhere/img/appPics/app_icon_152.PNG" rel="shortcut icon"/>
+        
         <!-- Base Style Sheets !-->
         <link rel="stylesheet" href="PaktorGoWhere/css/bootstrap.css">
         <link rel="stylesheet" href="PaktorGoWhere/css/font-awesome.css">
@@ -35,7 +40,11 @@
                     Nav Section 
                 !------------------------------------------------------------------------------------>
                 <nav class="navbar navbar-default navbar-fixed-top profile-nav" role="navigation">           
-                    <div class="col-xs-9 menu-left"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Profile</div>
+                    <div class="col-xs-9 menu-left">
+                        <i class="fa fa-chevron-left" onclick="history.go(-1); return false;"></i>&nbsp;
+                        <img src="PaktorGoWhere/img/appPics/app_icon_navbar.PNG" class="nav-icon" alt="icon"/>&nbsp;
+                        Profile
+                    </div>
                     <div class="col-xs-3 menu-right text-right"><i class="fa fa-bars" id="menu-toggle"></i></div>
                 </nav>
             </div>
